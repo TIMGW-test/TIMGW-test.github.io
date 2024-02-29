@@ -45,7 +45,7 @@ height: auto;
     text-decoration: none;
     color: black;
     font-family: Noto Sans, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin: 1%;
   }
   
@@ -77,12 +77,11 @@ height: auto;
 }
 
 /**** FONTS ******/
-.homepageIntro, .headerText, footer{
+.homepageIntro, .headerText, footer, .freeDownload, .product1{
     font-family: 'Roboto', sans-serif;
 
-
 }
-  
+
   
 footer{
     background-color: rgba(208, 208, 217, 0.9);
@@ -91,6 +90,99 @@ footer{
     font-size: small;
     text-align: center;
     
-    width: 100%;
+    width: auto;
 
 }
+
+.freeBibleStudiesDiv {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .freeDownload{
+    text-decoration: none;
+  }
+
+  
+  .product1 {
+  margin: 2%;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  width: 325px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bottomText{
+position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 285px;
+    height: 285px;
+  }
+
+  .downloadSVG{
+    width: 55px;
+    height: 55px;
+}
+
+.bottomText{
+    display: none;
+
+}
+
+.productText{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+
+}
+
+
+.freeDownloadText{
+    text-decoration: none;
+    display: inline-block;
+    color: #939393;
+
+}
+
+.freeDownloadIcon{
+    width: 15px;
+    height: 15px;
+}
+
+.productImg {
+    width: 285px;
+    height: 285px;
+    transition: transform 1s, filter 0.7s;
+  }
+  
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 285px;
+    height: 285px;
+    transition: transform 1s, filter 0.7s;
+    
+  }
+.container:hover {
+  transform: scale(1.03);
+  filter: brightness(.9);
+}
+
+.container:hover .bottomText {
+    display: block;
+    width: 55px;
+    height: 55px;
+  }

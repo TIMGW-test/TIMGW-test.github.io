@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>That It May Go Well</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  </head>
   <body>
     <header>
         <nav class="navbar">
@@ -31,15 +30,25 @@
         </header>
 
         <main>
+            <h1> Contact</h1>
 
-            <img  class="homepageBackgroundRiver" src="images/homepageBackgroundRiver.jpg"
-                alt="River scene. Photo taken in Alaska."> 
+                <!-- Contact Section -->
 
+    <div class="contactDiv">
+        <form action="https://api.web3forms.com/submit" method="POST" id="my-form">
 
-            <h2 class="homepageIntro">
-                Bible-Based Homeschool Curriculum
-            </h2>
+            <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
 
+            <input class="contactInput" type="text" placeholder="Full Name" name="name" required><br>
+
+            <input class="contactInput" type="email" placeholder="Email" name="email" required><br>
+            <textarea class="contactInputMessage" name="message" placeholder="Message" required rows="6"></textarea><br>
+            <input type="hidden" name="redirect" value="https://timgw-test.github.io/index.html">
+            <button class="contactSubmitButton" type="submit" class="h-captcha"
+                data-sitekey="15d5f54a-f07e-4c5f-9886-1217ae7ea101" data-callback="onSubmit">Send Message</button>
+
+        </form>
+    </div>
         </main>
 
 
