@@ -9,32 +9,51 @@
   <body>
     <header>
         <nav class="navbar">
-                <a title="Cycle 1" href="index.html">
-                    <img  class="lampAndLightLogo" src="images/lampAndLightLogo.png"
-                        alt="Lamp and Light Logo." width="70" 
-                        height="80"> </a>
-                <a href="index.html" onclick="closeMenu()">Home</a>
-                <a href="curriculum.html" onclick="closeMenu()">Curriculum</a>
-                <a href="biblestudies.html" onclick="closeMenu()">Bible Studies</a>
-                <a href="#about" onclick="closeMenu()">About</a>
-                <a href="#FAQ" onclick="closeMenu()">FAQ</a>
-                <a href="contact.html" onclick="closeMenu()">Contact</a>
-            </div>
-        </nav>
+            <div class="navDiv"> 
+            <a class="link" href="index.html" onclick="closeMenu()">Home</a>
+            <a class="link"href="curriculum.html" onclick="closeMenu()">Curriculum</a>
+            <a class="link"href="biblestudies.html" onclick="closeMenu()">Bible Studies</a>
+            <a class="link"href="#about" onclick="closeMenu()">About</a>
+            <a class="link"href="#FAQ" onclick="closeMenu()">FAQ</a>
+            <a class="link"href="contact.html" onclick="closeMenu()">Contact</a>
+
+            <a class="lampAndLightLogo" href="index.html">
+                <img src="images/lampAndLightLogo.png"
+                    alt="Lamp and Light Logo." width="50" 
+                    height="50"> </a>
+            <a class="link" ref="login.html" id="loginLink">Login</a>
+        </div>
+       
+        
+    </nav>
 
         <a title="Cycle 1" href="index.html">
             <img  class="homepageLogo" src="images/homepageLogo.png"
                 alt="That it may go well logo"> </a>
-        <h2 class="headerText"> Pioneering a new way to educate founded on the Bible. </h2>
 
         </header>
 
         <main>
-            <h1> Contact</h1>
+
+
+
+            <!--<img src="images/contactHeaderImg.jpeg" class="contactHeaderImg" -->
 
                 <!-- Contact Section -->
 
+                <div class="contactImgDiv">
+                    <h1 class = "contactHeader"> Contact Us </h1>
+
+                    <h2 class="contactMemoText">
+                        Have a question? <br>
+                        <br>
+                        Please view our <a href="FAQ.html" id="linkFAQ">FAQ</a> for quick answers to common questions. If you still don't see the answer you are looking for, fill out the form below and we will get back to you as soon as possible.
+                    </h2>
+                </div>
+              
+
     <div class="contactDiv">
+     
         <form action="https://api.web3forms.com/submit" method="POST" id="my-form">
 
             <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
