@@ -85,7 +85,7 @@ height: auto;
 }
 
 /**** FONTS ******/
-.homepageIntro, .headerText, footer, .freeDownload, .product1, .contactMemoText{
+.homepageIntro, .headerText, footer, .freeDownload, .studyListing, .contactMemoText{
     font-family: 'Roboto', sans-serif;
 
 }
@@ -113,7 +113,7 @@ footer{
   }
 
   
-  .product1 {
+  .studyListing {
   margin: 2%;
   vertical-align: top;
   display: inline-block;
@@ -149,7 +149,7 @@ position: absolute;
 
 }
 
-.productText{
+.studyListingText{
     text-decoration: none;
     display: inline-block;
     color: black;
@@ -169,7 +169,7 @@ position: absolute;
     height: 15px;
 }
 
-.productImg {
+.studyListingImg {
     width: 285px;
     height: 285px;
     transition: transform 1s, filter 0.7s;
