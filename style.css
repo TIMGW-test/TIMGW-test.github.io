@@ -10,8 +10,9 @@ height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 16%;
     margin-top: 40px;
+    margin-bottom: 40px;
 
 }
 
@@ -23,40 +24,48 @@ height: auto;
     top: 0;
     z-index: 1;
     width: auto;
-    background-color: rgba(208, 208, 217, 0.9);
+    background-color: black;
     backdrop-filter: blur(2px);
     font-size: 18px;
-    padding: 14px 16px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 8px 8px;
+    text-decoration: none;
+    transition: color 0.9s ease-out;  
+}
 
+.navDiv{
+    padding-left: 50px;
+}
+
+.blackDivider{
+    background-color: black;
+}
+
+
+
+
+  .directoryLinks{
+    border-bottom: 2px solid #6f6e6e;
+    padding-bottom: 3px;
+    border-top: 2px solid #6f6e6e;
+    padding-top: 3px;
+    width: 35%;
 
   }
-
-
 
   
   .link {
     text-decoration: none;
-    color: black;
-    font-family: Noto Sans, sans-serif;
-    font-size: 16px;
+    color: white;
+    font-family: Georgia, sans-serif;
+    font-size: 15px;
     padding-left: 20px;
+    transition: color 0.2s ease-out;  
   }
 
-  .lampAndLightLogo{
-    margin-top: -16px;
-    float: right;
-  }
-
+  .navbar a:hover{
+    color:#6f6e6e;
+}
   
-  .navbar a:hover {
-    text-decoration: none;
-    text-decoration: underline;
-    text-decoration-color: #EAEFFA;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 9px;
-  }
 
 
 #loginLink
@@ -92,43 +101,17 @@ height: auto;
 
   
 footer{
-    background-color: rgba(208, 208, 217, 0.9);
+    background-color: black;
     margin-top: auto;
     padding: 20px;  
     font-size: small;
     text-align: center;
-    
     width: auto;
+    color: white;
 
 }
 
-.freeBibleStudiesDiv {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
 
-  .freeDownload{
-    text-decoration: none;
-  }
-
-  
-  .studyListing {
-  margin: 2%;
-  vertical-align: top;
-  display: inline-block;
-  text-align: left;
-  width: 325px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.bottomText{
-position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
 
@@ -279,4 +262,55 @@ position: absolute;
   }
   
 
- 
+ /********************* Bible Studies Page **********************/
+
+ .bibleStudyHeader{
+    text-align: center;
+    font-family: 'Geneva', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 20px
+ }
+
+ .bibleStudySubHeader{
+    text-align: center;
+    font-family: 'Geneva', sans-serif;
+    font-weight: lighter;
+    margin-top: 5px;
+    color:#6f6e6e;
+ }
+
+ .freeBibleStudiesDivContainer{
+    text-align: center;
+    width: 100%;
+}
+
+.freeBibleStudiesDiv {
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    justify-content: center;
+  }
+  
+  .studyListing {
+  margin: 10px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  width: 325px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bottomText{
+position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.freeDownload{
+    text-decoration: none;
+  }
