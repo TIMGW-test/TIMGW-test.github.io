@@ -333,6 +333,10 @@ footer{
     width: 70%;
     justify-content: center;
   }
+
+  .curriculumDiv{
+    width: 100%;
+  }
   
   .studyListing {
   margin: 10px;
@@ -409,8 +413,8 @@ position: absolute;
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 340px;
-  height: 340px;
+  width: 310px;
+  height: 310px;
   padding-bottom: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
@@ -420,30 +424,50 @@ position: absolute;
 .curriculumListingText{
   text-decoration: none;
   display: inline-block;
-  color: black;
-  padding-top: 50px;
+  color: rgb(27, 24, 24);
+  padding-top: 20px;
   font-size: 20px;
 
 }
 
 .curriculumListingImg {
-  width: 340px;
-  height: 340px;
+  width: 310px;
+  height: 310px;
+}
+
+.containerCurriculum {
+  position: relative;
+  text-align: center;
+  width: 285px;
+  height: 285px;
   transition: transform 1s, filter 0.7s;
+  
+}
+.containerCurriculum:hover {
+filter: brightness(.9);
+}
+
+.containerCurriculum:hover .bottomText {
+  display: block;
+  width: 55px;
+  height: 55px;
 }
 
 
 /**************** Home Page ***************/
 
-  #homepageBackgroundRiver, #deskImg{
+  #homepageBackgroundRiver, #deskImg, #girlImg{
     max-width:100%;
     max-height:100%;
+
 }
+
 
 /* Slideshow container */
 .slideshowContainer {
     position: relative;
     margin: auto;
+
   }
 
 
@@ -486,7 +510,6 @@ position: absolute;
   }
   
 
-  
   /* Fading animation */
   .fade {
     animation-name: fade;
@@ -503,3 +526,68 @@ position: absolute;
     .prev, .next,.text {font-size: 11px}
   }
 
+
+  /*************** Cycle Specific *************/
+
+  .cycleHeaderContainer{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+
+  }
+
+  .cycleLogoHeader{
+    width: 15%;
+  }
+
+
+  /**************** About Page *****************/
+
+  .blackDividerAbout{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+  }
+  .aboutImgDiv{
+      width: 50%;
+      margin-left: 4%;
+    }
+
+    .aboutImg{
+width: 735px;
+height: 865px;
+    }
+
+    .aboutTextDiv{
+      width: 46%;
+      background-color: white;
+      justify-content: center;
+      display: flex; /* Use flexbox */
+      margin-right: 4%;
+      margin-bottom: 4px;
+
+    }
+
+    .aboutHeaderText{
+      font-family: "Arial Narrow", sans-serif;
+      font-weight: normal;
+      font-size: 50px;
+      color: black;
+        }
+
+    .aboutText{
+      width: 70%;
+      justify-content: center;
+      padding-top: 10%;
+      color:#6f6e6e;
+      font-family: Didot, serif;
+      font-size: 18px;
+
+    }
+
+  
+  
