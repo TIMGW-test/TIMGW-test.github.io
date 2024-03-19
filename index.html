@@ -76,52 +76,86 @@
                 </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="prevSlide()">❮</a>
+        <a class="next" onclick="showSlides()">❯</a>
 
         </div>
 
 
-        <script>
+        <div class="homepageButtonContainer">
+            <div id="downloadHomepageHomeschool">
+                    <h1>Christian Homeschool Curriculum</h1>
+               <h3>Free, Bible-based homeschool curriculum</h3>
+               <a href="curriculum.html"><button class="homepageDownloadButton">Download Here</button></a>
+            </div>
 
-            var timeoutId;
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-                clearTimeout(timeoutId);
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("homepageImgs");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
+            <div id="downloadHomepageStudies">
+            <h1>Free Bible Studies</h2>
+            <h3>Dive into God's Word</h3>
+            <a href="biblestudies.html"><button class="homepageDownloadButton">Download Here</button></a>
+        </div>
+     
+
+
        
-              slides[slideIndex-1].style.display = "block";  
+    <script>
+            var timeOut = 2000;
+        var slideIndex = 0;
+        var autoOn = true;
+        showSlides(); 
 
-              timeoutId = setTimeout(showSlides, 3000);
+        autoSlides();
 
-             
+        function autoSlides() {
+            timeOut = timeOut - 20;
+
+            if (autoOn == true && timeOut < 0) {
+                showSlides();
             }
-            
-            
-            </script>
+            setTimeout(autoSlides, 20);
+        }
+
+        function prevSlide() {
+
+            timeOut = 2000;
+
+            var slides = document.getElementsByClassName("homepageImgs");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex--;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            if (slideIndex == 0) {
+                slideIndex = 3
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function showSlides() {
+
+            timeOut = 2000;
+
+            var slides = document.getElementsByClassName("homepageImgs");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+
   
   
-
-            <h2 class="homepageIntro">
-                Bible-Based Homeschool Curriculum
-            </h2>
-
         </main>
 
 

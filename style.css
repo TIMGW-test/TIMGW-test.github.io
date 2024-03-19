@@ -1,18 +1,17 @@
-
-body{
-margin: 0px;
-padding: 0px;
-height: auto;
+body {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
 }
 
 
-.homepageLogo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 16%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.homepageLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
 }
 
@@ -21,37 +20,86 @@ height: auto;
 
 
 
-  .headerText{
-    /*background-color: rgba(208, 208, 217, 0.9);*/
-    padding: 20px;
-    text-align: center;
-    font-weight: normal; 
+.headerText {
+  /*background-color: rgba(208, 208, 217, 0.9);*/
+  padding: 20px;
+  text-align: center;
+  font-weight: normal;
 
-  }
+}
 
 
 
-.homepageIntro{
-    text-align: center;
-    font-weight: normal; 
+.homepageIntro {
+  text-align: center;
+  font-weight: normal;
 
+}
+
+.homepageButtonContainer{
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+#downloadHomepageHomeschool{
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+#downloadHomepageStudies{
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+
+#downloadHomepageStudies h1, #downloadHomepageHomeschool h1, #downloadHomepageStudies h3, #downloadHomepageHomeschool h3{
+  font-weight: lighter;
+  font-family: DejaVu Sans Mono, Helvetica, sans-serif;
+  color: #333;
+}
+#downloadHomepageStudies h1, #downloadHomepageHomeschool h1{
+  font-size: 28px;
+}
+
+.homepageDownloadButton{
+  border: solid 3px #333;
+  background-color: white;
+  color: #333;
+  padding: 10px 70px;
+  font-family: DejaVu Sans Mono, Helvetica, sans-serif;
+  transition: 0.7s ease;
+}
+
+.homepageDownloadButton:hover{
+  background-color: #333;
+  color: white;
 }
 
 /**** FONTS ******/
-.homepageIntro, .headerText, footer, .freeDownload, .studyListing, .contactMemoText, .curriculumListing{
-    font-family: 'Roboto', sans-serif;
+.homepageIntro,
+.headerText,
+footer,
+.freeDownload,
+.studyListing,
+.contactMemoText,
+.curriculumListing,
+.freeDownloadListing {
+  font-family: 'Roboto', sans-serif;
 
 }
 
-  
-footer{
-    background-color: black;
-    margin-top: auto;
-    padding: 20px;  
-    font-size: small;
-    text-align: center;
-    width: auto;
-    color: white;
+
+footer {
+  background-color: black;
+  margin-top: auto;
+  padding: 20px;
+  font-size: small;
+  text-align: center;
+  width: auto;
+  color: white;
 
 }
 
@@ -60,183 +108,206 @@ footer{
 
 
 .container {
-    position: relative;
-    text-align: center;
-    width: 285px;
-    height: 285px;
-  }
-
-  .downloadSVG{
-    width: 55px;
-    height: 55px;
+  position: relative;
+  text-align: center;
+  width: 285px;
+  height: 285px;
 }
 
-.bottomText{
-    display: none;
-
+.downloadSVG {
+  width: 55px;
+  height: 55px;
 }
 
-
-
-.freeDownloadText{
-    text-decoration: none;
-    display: inline-block;
-    color: #939393;
+.bottomText {
+  display: none;
 
 }
 
-.freeDownloadIcon{
-    width: 15px;
-    height: 15px;
+
+
+.freeDownloadText {
+  text-decoration: none;
+  display: inline-block;
+  color: #939393;
+
 }
 
-.studyListingImg {
-    width: 285px;
-    height: 285px;
-    transition: transform 1s, filter 0.7s;
-  }
-  
+.freeDownloadIcon {
+  width: 10px;
+  height: 10px;
+}
+
+.studyListingImg, .freeDownloadListingImg {
+  width: 285px;
+  height: 285px;
+  transition: transform 1s, filter 0.7s;
+}
+
 
 .container {
-    position: relative;
-    text-align: center;
-    width: 285px;
-    height: 285px;
-    transition: transform 1s, filter 0.7s;
-    
-  }
+  position: relative;
+  text-align: center;
+  width: 285px;
+  height: 285px;
+  transition: transform 1s, filter 0.7s;
+
+}
+
 .container:hover {
   transform: scale(1.03);
   filter: brightness(.9);
 }
 
 .container:hover .bottomText {
-    display: block;
-    width: 55px;
-    height: 55px;
-  }
-
-
-
-
-
-  /* CONTACT */
-  .contactHeader{
-    font-weight: normal;
-    text-align: center;
-    /*background-color: rgba(208, 208, 217, 0.9); */
-    padding-top: 55px;
-    padding-bottom: 55px;
-    font-family: 'Georgia', serif;
-    margin-bottom: 0;
-    color: white;
-
-
-  }
-
-  #linkFAQ{
-
-    color:white;
-  }
-
-  .contactMemoText{
-    font-weight: normal;
-    text-align: center;
-    width: 50%;
-    padding-left: 25%;
-    color: white;
-  }
-
-  .contactImgDiv{
-    background-image: url('images/contactHeaderImg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
-  }
-
-.contactDiv {
-    text-align: center;
-    width: 40%;
-    margin: auto;
-    border-width: 7px;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    margin-bottom: 2%;
-
-  }
-  
-  .contactInput,
-  .contactInputMessage {
-    width: 50%;
-    border: none;
-    background-color: inherit;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Verdana', 'Andale Mono', monospace;
-    border: 2px solid black;
-    transition: border 0.3s ease-out;
-
-  }
-
-  .contactInput:hover, .contactInputMessage:hover{
-    border: 2px solid #939393;
-
-  }
-
-  
-  .contactSubmitButton {
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: 'Verdana', 'Andale Mono', monospace;
-    padding: 10px 12px 10px 12px;
-    margin-top: 40px;
-    transition: background-color 0.3s ease-out;
-  }
-
-  .contactSubmitButton:hover{
-    background-color:#939393;
-  }
-  
-
- /********************* Bible Studies Page **********************/
-
- .bibleStudyHeader{
-    text-align: center;
-    font-family: 'Geneva', sans-serif;
-    font-weight: normal;
-    font-size: 60px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 20px
- }
-
- .bibleStudySubHeader{
-    text-align: center;
-    font-family: 'Geneva', sans-serif;
-    font-weight: lighter;
-    margin-top: 5px;
-    color:#6f6e6e;
- }
-
- .freeBibleStudiesDivContainer, .curriculumDivContainer{
-    text-align: center;
-    width: 100%;
+  display: block;
+  width: 55px;
+  height: 55px;
 }
 
-.freeBibleStudiesDiv, .curriculumDiv {
-    display: inline-block;
-    text-align: center;
-    width: 70%;
-    justify-content: center;
-  }
 
-  .curriculumDiv{
-    width: 100%;
-  }
-  
-  .studyListing {
+
+
+
+/* CONTACT */
+.contactHeader {
+  font-weight: normal;
+  text-align: center;
+  /*background-color: rgba(208, 208, 217, 0.9); */
+  padding-top: 55px;
+  padding-bottom: 55px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 0;
+  color: white;
+
+
+}
+
+#linkFAQ {
+
+  color: white;
+}
+
+.contactMemoText {
+  font-weight: normal;
+  text-align: center;
+  width: 50%;
+  padding-left: 25%;
+  color: white;
+}
+
+.contactImgDiv {
+  background-image: url('images/contactHeaderImg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
+}
+
+.contactDiv {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  border-width: 7px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-bottom: 2%;
+
+}
+
+.contactInput,
+.contactInputMessage {
+  width: 50%;
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  border: 2px solid black;
+  transition: border 0.3s ease-out;
+
+}
+
+.contactInput:hover,
+.contactInputMessage:hover {
+  border: 2px solid #939393;
+
+}
+
+
+.contactSubmitButton {
+  border: none;
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  padding: 10px 12px 10px 12px;
+  margin-top: 40px;
+  transition: background-color 0.3s ease-out;
+}
+
+.contactSubmitButton:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+/********************* Free Bible Studiesand Free downloads Pages **********************/
+
+.bibleStudyHeader,
+.freeDownloadsHeader {
+  text-align: center;
+  font-family: 'Geneva', sans-serif;
+  font-weight: normal;
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 20px
+}
+
+.bibleStudySubHeader,
+.freeDownloadsSubHeader {
+  text-align: center;
+  font-family: 'Geneva', sans-serif;
+  font-weight: lighter;
+  margin-top: 5px;
+  color: #6f6e6e;
+}
+
+.freeKidDownloadsButton {
+
+  border: 2px solid #333;
+  background-color: white;
+  padding: 6px 8px;
+  margin-top: 10px;
+  transition: 0.6s ease;
+}
+
+
+.freeKidDownloadsButton:hover {
+  background-color: #333;
+  color: white;
+}
+
+.freeBibleStudiesDivContainer,
+.curriculumDivContainer,.freeDownloadsDivContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.freeBibleStudiesDiv,
+.curriculumDiv {
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  justify-content: center;
+}
+
+.curriculumDiv {
+  width: 100%;
+}
+
+.studyListing, .freeDownloadListing{
   margin: 10px;
   vertical-align: top;
   display: inline-block;
@@ -245,68 +316,68 @@ footer{
   padding-bottom: 15px;
 }
 
-.studyListingText{
+.studyListingText, .freeDownloadListingText {
   text-decoration: none;
   display: inline-block;
   color: black;
 
 }
 
-.bottomText{
-position: absolute;
+.bottomText {
+  position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.freeDownload{
-    text-decoration: none;
-  }
+.freeDownload {
+  text-decoration: none;
+}
 
 
 /**************** Curriculum Page ***************/
 
-.curriculumHeaderContainer{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+.curriculumHeaderContainer {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
-.curriculumLogoHeader{
-    width: 22%;
-    margin-left: 20%;
-
-}
-
-.curriculumHeader{
-    width: 40%;
-    float: right;
-    margin-right: 15%;
-    font-weight: normal;
-    font-family: 'Geneva', sans-serif;
+.curriculumLogoHeader {
+  width: 22%;
+  margin-left: 20%;
 
 }
 
-.curriculumHeaderButton{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 12px;
-    font-size: 18px;
-    float: right;
-    margin-right: 30%;
-    margin-top: -14%;
+.curriculumHeader {
+  width: 40%;
+  float: right;
+  margin-right: 15%;
+  font-weight: normal;
+  font-family: 'Geneva', sans-serif;
+
 }
 
-.curriculumHeaderButton:hover{
-    background-color: black;
-    color: white;
+.curriculumHeaderButton {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 12px;
+  font-size: 18px;
+  float: right;
+  margin-right: 30%;
+  margin-top: -14%;
 }
 
-.curriculumListing{
+.curriculumHeaderButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.curriculumListing {
   margin: 10px;
   vertical-align: top;
   display: inline-block;
@@ -314,12 +385,12 @@ position: absolute;
   width: 310px;
   height: 310px;
   padding-bottom: 60px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
-  }
+}
 
 
-.curriculumListingText{
+.curriculumListingText {
   text-decoration: none;
   display: inline-block;
   color: rgb(27, 24, 24);
@@ -339,10 +410,11 @@ position: absolute;
   width: 285px;
   height: 285px;
   transition: transform 1s, filter 0.7s;
-  
+
 }
+
 .containerCurriculum:hover {
-filter: brightness(.9);
+  filter: brightness(.9);
 }
 
 .containerCurriculum:hover .bottomText {
@@ -354,163 +426,178 @@ filter: brightness(.9);
 
 /**************** Home Page ***************/
 
-  #homepageBackgroundRiver, #deskImg, #girlImg{
-    max-width:100%;
-    max-height:100%;
+#homepageBackgroundRiver,
+#deskImg,
+#girlImg {
+  max-width: 100%;
+  max-height: 100%;
 
 }
 
 
 /* Slideshow container */
 .slideshowContainer {
-    position: relative;
-    margin: auto;
+  position: relative;
+  margin: auto;
 
-  }
+}
 
 
 /* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+
+  to {
+    opacity: 1
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+    font-size: 11px
   }
-  
-
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+}
 
 
-  /*************** Cycle Specific *************/
+/*************** Cycle Specific *************/
 
-  .cycleHeaderContainer{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+.cycleHeaderContainer {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 
-  }
+}
 
-  .cycleLogoHeader{
-    width: 15%;
-  }
-
-
-  /**************** About Page *****************/
-
-  .blackDividerAbout{
-    background-color: black;
-    width: 100%;
-    display: flex;
-    padding-top: 10px;
-  }
-  .aboutImgDiv{
-      width: 50%;
-      margin-left: 4%;
-    }
-
-    .aboutImg{
-width: 735px;
-height: 865px;
-    }
-
-    .aboutTextDiv{
-      width: 46%;
-      background-color: white;
-      justify-content: center;
-      display: flex; /* Use flexbox */
-      margin-right: 4%;
-      margin-bottom: 4px;
-
-    }
-
-    .aboutHeaderText{
-      font-family: "Arial Narrow", sans-serif;
-      font-weight: normal;
-      font-size: 50px;
-      color: black;
-        }
-
-    .aboutText{
-      width: 70%;
-      justify-content: center;
-      padding-top: 10%;
-      color:#6f6e6e;
-      font-family: Didot, serif;
-      font-size: 18px;
-
-    }
-
-  
+.cycleLogoHeader {
+  width: 15%;
+}
 
 
-    /* Add a black background color to the top navigation */
+/**************** About Page *****************/
+
+.blackDividerAbout {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+}
+
+.aboutImgDiv {
+  width: 50%;
+  margin-left: 4%;
+}
+
+.aboutImg {
+  width: 735px;
+  height: 865px;
+}
+
+.aboutTextDiv {
+  width: 46%;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  margin-right: 4%;
+  margin-bottom: 4px;
+
+}
+
+.aboutHeaderText {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  color: black;
+}
+
+.aboutText {
+  width: 70%;
+  justify-content: center;
+  padding-top: 10%;
+  color: #6f6e6e;
+  font-family: Didot, serif;
+  font-size: 18px;
+
+}
+
+
+
+
+/* Add a black background color to the top navigation */
 .navbar {
   background-color: #333;
   overflow: hidden;
   background-color: black;
-    font-size: 16px;
-    text-decoration: none;
-    transition: color 0.9s ease-out;  
-    padding-left: 50px; 
-  
-    
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.9s ease-out;
+  padding-left: 50px;
+
+
 
 }
 
-.lineContainer{
-border-bottom: 2px white solid;
-border-top: 2px white solid;
-margin-top: 10px;
-width: 60%;
-height: 36px;
-padding: 0;
+.lineContainer {
+  border-bottom: 1px white solid;
+  border-top: 1px white solid;
+  margin-top: 8px;
+  width: 60%;
+  height: 36px;
+  padding: 0;
 
 }
 
@@ -562,7 +649,7 @@ padding: 0;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -578,8 +665,9 @@ padding: 0;
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  color:#6f6e6e;
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #6f6e6e;
 }
 
 /* Add a grey background to dropdown links on hover */
@@ -595,48 +683,104 @@ padding: 0;
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child), .dropdown .dropbtn {
+
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
+
   .navbar a.icon {
     float: right;
     display: block;
+  }
+
+  .lineContainer {
+    display: none;
   }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
+
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .navbar.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .navbar.responsive .dropdown {float: none;}
-  .navbar.responsive .dropdown-content {position: relative;}
+
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+
   .navbar.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
   }
+
 }
-  
 
 
-.blackDivider{
+
+.blackDivider {
   background-color: black;
 }
 
 
 
 
+/************* Printed Books Page ***************/
+.printedBooksTextDiv {
+  text-align: center;
+  font-family: "Arial Narrow", sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: #6f6e6e;
+  padding-bottom: 30px;
+}
+
+.printedBookImgDiv {
+  text-align: center;
+  width: auto;
+}
+
+.printedBookImg {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 30px;
+
+}
+
+.printedBookButton {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 3px #333 solid;
+  background: white;
+  color: #6f6e6e;
+  padding: 10px 16px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: small;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: 0.6s ease;
+}
 
 
-
-
-
+.printedBookButton:hover {
+  background-color: #333;
+  color: white;
+}
