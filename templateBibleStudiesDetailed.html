@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>That It May Go Well</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
   </head>
   <body>
     <header>
@@ -19,7 +21,6 @@
             <a class="link"href="contact.html" onclick="closeMenu()">Contact</a>
         </div>
     
-          <!--  <a class="link" ref="login.html" id="loginLink">Login</a> -->
         </div>
        
     </nav>
@@ -28,10 +29,14 @@
             <img  class="homepageLogo" src="images/lampAndLightLogo.png"
                 alt="That it may go well logo"> </a>
 
+              
         </header>
+        
 
         <main>
             <h1> template detailed view Bible studies</h1>
+
+            <img id="bibleStudyImgTemplate" src="" alt="Bible Study Image"> 
         </main>
 
 
@@ -40,7 +45,12 @@
         </footer>
 
 
+        <script>
+          // Call the updateImage function when the page loads
+          window.onload = function() {
+              updateImage();
+          };
+      </script>
 
-	<script src="index.js"></script>
-  </body>
+         </body>
 </html>
