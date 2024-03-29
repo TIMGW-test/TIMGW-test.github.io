@@ -1,0 +1,214 @@
+/******************* FAQ PAGE *******************/
+/* #################
+### BASE STYLING ###
+#################### */
+:root {
+ 
+
+    --transition-duration-timing-to: 150ms ease-out;
+    --transition-duration-timing-from: 150ms ease-in;
+    --transition-duration-timing-delay-from: 0s 150ms ease-in;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+  }
+  
+  #htmlFAQ {
+    box-sizing: border-box;
+  }
+  
+  #questionFAQ{
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+    &:not(.accordion-toggle &) {
+      margin-top: 2rem;
+      margin-bottom: 0.25em;
+    }
+  }
+  
+  /* Adds spacing between questions */
+  .sectionFAQ + .sectionFAQ {
+    margin-top: 1.5em;
+  }
+
+
+  
+  .containerFAQ {
+    padding: 2em;
+    width: min(90%, 48em);
+    margin-inline: auto;
+  }
+  
+  /* ##########################
+  ### TOGGLE SWITCH STYLING ###
+  ############################# */
+  
+  .switch {
+    --_switch-height: 24px;
+    --_switch-width: 48px;
+  
+    position: relative;
+    margin-right: 0.5em;
+    height: var(--_switch-height);
+    width: var(--_switch-width);
+  
+    /* Hide default HTML checkbox but preserve accessibility. */
+    & input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+  
+  /* The slider */
+    .switch input:checked + & {
+      background-color: rgb(205, 205, 205);
+      filter: brightness(130%);
+      transition: background-color var(--transition-duration-timing-to);
+    }
+    .switch input:checked + &::before {
+      left: 0;
+      translate: calc(calc(var(--_switch-width) - 100%) - var(--_offset)) -50%;
+      transition: translate var(--transition-duration-timing-to);
+    }
+  
+  
+  /* #######################
+  ### ACCORDION STYLING ###
+  ########################## */
+  .accordion {
+    /* Apply border radius to the parent container... */
+    border-radius: 8px;
+    /* ...and set overflow hidden to crop its children so the border remains visible. */
+    overflow: hidden;
+    outline: 1px solid #333;
+  
+  }
+  
+  .accordion-toggle {
+    padding: 0.5em 1em;
+    margin-bottom: 0;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+  
+    border: none;
+  
+    &:focus-visible,
+    &:focus,
+    &:hover,
+    &[aria-expanded="true"] {
+      filter: brightness(140%);
+    }
+  }
+  
+  .btn-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background-color: #333;
+    border-radius: 100vmax;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+  
+      height: 4px;
+      width: calc(100% - 0.75em);
+  
+      background-color: rgb(239, 239, 239);
+    }
+    &::after {
+      rotate: 90deg;
+    }
+    .accordion-toggle[aria-expanded="true"] &::before,
+    .accordion-toggle[aria-expanded="true"] &::after {
+      rotate: 180deg;
+    }
+  
+    /* The prefers-reduced-motion feature query detects whether the user has requested the operating system to minimize the amount of animation or motion it uses */
+    @media (prefers-reduced-motion: no-preference) {
+      &::before,
+      &::after {
+        /* Transition from '-' to '+'. */
+        transition: rotate var(--transition-duration-timing-from);
+      }
+  
+      /* Transition from '+' to -'. */
+      .accordion-toggle[aria-expanded="true"] &::before,
+      .accordion-toggle[aria-expanded="true"] &::after {
+        transition: rotate var(--transition-duration-timing-to);
+      }
+    }
+  }
+  
+  .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    /* Make the collapsed panel container not accessible to screen reader. */
+    /* Contrary to 'display: none', the 'visibility' property can be delayed to transition other properties (here 'grid-template-row'). */
+    visibility: hidden;
+    /* Also add opacity transition for better visual effect. */
+    opacity: 0;
+  
+    .accordion-toggle[aria-expanded="true"] + & {
+      grid-template-rows: 1fr;
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    @media (prefers-reduced-motion: no-preference) {
+      /* Transition from expanded to collapsed state. */
+      /* The 'visibility: hidden' property cannot be animated but it can be delayed so it kicks in only after the 'grid-template-rows' and 'opacity' transitions are complete.  */
+      transition: grid-template-rows var(--transition-duration-timing-from),
+        visibility var(--transition-duration-timing-delay-from),
+        opacity var(--transition-duration-timing-from);
+  
+      /* Transition from collapsed to expanded state (no delay required).*/
+      /* This works since 'visbility: visible' is set instantaneously and the 'grid-template-rows' and 'opacity' control the state transition. */
+      .accordion-toggle[aria-expanded="true"] + & {
+        transition: grid-template-rows var(--transition-duration-timing-to),
+          visibility 0s 0s ease-out, opacity var(--transition-duration-timing-to);
+      }
+    }
+  }
+  
+  .accordion-drawer {
+    background-color: rgb(239, 239, 239);
+    overflow: hidden;
+  }
+  
+  /* Additional div to add padding to the content without messing with the animation. */
+  .content-container {
+    padding: 1em;
+    p {
+      text-align: left;
+    }
+  }
+  
+  #questionAnswerFAQ{
+    color: black;
+    font-family: Didot, serif;
+  }
+  

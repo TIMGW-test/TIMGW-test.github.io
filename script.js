@@ -11,7 +11,7 @@ function myFunction() {
 
 
 
-function loadStudy(id, imageSrc) {
+/*function loadStudy(id, imageSrc) {
   // Store the image source in localStorage to be accessed in the template page
   localStorage.setItem('imageSrc', imageSrc);
   localStorage.setItem('studyId', id);
@@ -29,7 +29,8 @@ function updateImage() {
       document.getElementById("bibleStudyImgTemplate").src = imageSrc;
       // Clear the localStorage to prevent the image from being loaded again
       localStorage.removeItem('imageSrc');
+      localStorage.removeItem('studyId');
   }
 }
 
-window.onload = updateImage;
+window.onload = updateImage; */

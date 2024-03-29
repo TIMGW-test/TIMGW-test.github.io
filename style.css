@@ -6,16 +6,14 @@ body {
 
 
 .homepageLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 16%;
   margin-top: 40px;
   margin-bottom: 40px;
 
 }
-
-
+.homepageLogoDiv{
+text-align: center;
+}
 
 
 
@@ -86,7 +84,8 @@ footer,
 .studyListing,
 .contactMemoText,
 .curriculumListing,
-.freeDownloadListing {
+.freeDownloadListing,
+.cycleListing {
   font-family: 'Roboto', sans-serif;
 
 }
@@ -255,7 +254,8 @@ footer {
 /********************* Free Bible Studiesand Free downloads Pages **********************/
 
 .bibleStudyHeader,
-.freeDownloadsHeader {
+.freeDownloadsHeader,
+.FAQHeader {
   text-align: center;
   font-family: 'Geneva', sans-serif;
   font-weight: normal;
@@ -266,7 +266,8 @@ footer {
 }
 
 .bibleStudySubHeader,
-.freeDownloadsSubHeader {
+.freeDownloadsSubHeader,
+.FAQSubHeader {
   text-align: center;
   font-family: 'Geneva', sans-serif;
   font-weight: lighter;
@@ -290,22 +291,20 @@ footer {
 }
 
 .freeBibleStudiesDivContainer,
-.curriculumDivContainer,.freeDownloadsDivContainer {
+.curriculumDivContainer,.freeDownloadsDivContainer, .cycleDivContainer {
   text-align: center;
   width: 100%;
 }
 
 .freeBibleStudiesDiv,
-.curriculumDiv {
+.curriculumDiv, .cycleDiv {
   display: inline-block;
   text-align: center;
   width: 70%;
   justify-content: center;
 }
 
-.curriculumDiv {
-  width: 100%;
-}
+
 
 .studyListing, .freeDownloadListing{
   margin: 10px;
@@ -316,7 +315,7 @@ footer {
   padding-bottom: 15px;
 }
 
-.studyListingText, .freeDownloadListingText {
+.studyListingText, .freeDownloadListingText, .cycleListingText {
   text-decoration: none;
   display: inline-block;
   color: black;
@@ -587,17 +586,16 @@ footer {
   transition: color 0.9s ease-out;
   padding-left: 50px;
 
-
-
 }
 
 .lineContainer {
   border-bottom: 1px white solid;
   border-top: 1px white solid;
   margin-top: 8px;
-  width: 60%;
+  width: 96%;
   height: 36px;
   padding: 0;
+
 
 }
 
@@ -612,6 +610,10 @@ footer {
   font-size: 16px;
   margin-bottom: 14px;
 
+}
+
+#loginNav{
+  float:right;
 }
 
 
@@ -790,3 +792,132 @@ footer {
 #detailedViewBibleStudiesDiv{
 justify-content: center;
 }
+
+.cycleHeading{
+  font-family: 'Geneva', sans-serif;
+  color: #6f6e6e;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+.cycleListingImg{
+  width: 230px;
+  height: 230px;
+  transition: transform 1s, filter 0.7s;
+}
+
+.cycleListing{
+  margin: 10px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin-top: 0;
+
+}
+
+.cycleContainer {
+  position: relative;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  transition: transform 1s, filter 0.7s;
+}
+
+
+.cycleContainer:hover {
+  transform: scale(1.03);
+  filter: brightness(.9);
+}
+
+
+.cycleDiv {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+  justify-content: center;
+}
+
+/** Commenting out for now, this is the download icon that goes at the bottom of the picture hen hovered */
+/*.cycleContainer:hover .bottomText {
+  display: block;
+  width: 10px;
+  height: 10px;
+} */
+
+.cycle1TeacherGuideDetailed{
+  width: 595px;
+  height: 595px;
+
+
+}
+
+
+
+
+/*************** Bible Study Detailed View ***************/
+
+#detailedStudyContainer{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+#detailedStudyImgContainer{
+  width: 50%;
+  padding-left: 25px;
+
+
+}
+#studyImage{
+width: 600px;
+height: 600px;
+}
+
+#detailedStudyTextContainer{
+  width: 45%;
+  padding-right: 40px;
+  padding-top: 20px;
+  text-align: left;
+
+}
+#studyTitle{
+  font-size: 40px;
+  font-family: 'Geneva', sans-serif;
+  color: #333;
+}
+
+#studyDownloadButton{
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  padding: 8px 50px;
+  border: #333 solid 2px;
+  font-family: "Trebuchet MS", sans-serif;
+  transition: 0.7s ease;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+
+}
+
+#studyDownloadButton:hover {
+  color: #333;
+  background-color: white;
+}
+
+
+#studyDescription{
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: 'Geneva', sans-serif;
+  color: #333;
+
+}
+
