@@ -472,15 +472,60 @@ footer {
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.homepageCaptionText {
+    color: black;
+    font-size: 60px;
+    padding: 8px 12px;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    top: 50px; 
+    left: 50px;
+    width: auto; 
+    animation: fadeInRight 1.5s forwards; 
+
+  
 }
+
+.homepageCaptionBtn{
+border: none;
+background-color: #333;
+color: white;
+transition: 0.6s ease;
+padding: 10px 15px;
+animation: fadeInLeft 1.5s forwards; 
+width: 150px;
+
+}
+
+.homepageCaptionBtn:hover{
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px); /* Adjust the distance as needed */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px); /* Adjust the distance as needed */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 
 /* Fading animation */

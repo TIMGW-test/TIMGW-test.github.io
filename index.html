@@ -1,170 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamp and Light Living</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="script.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp and Light Living</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="script.js"></script>
 
 </head>
-  <body>
-    <header>
-        <div class="navbar" id="myTopnav">
-            <div class="lineContainer">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-              <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
-              </button>
-              <div class="dropdown-content">
-                <a href="aboutcurriculum.html">About Curriculum</a>
-                <a href="cycle1.html">Cycle 1</a>
-                <a href="cycle2.html">Cycle 2</a>
-                <a href="cycle3.html">Cycle 3</a>
-                <a href="preschool.html">Preschool</a>
-                <a href="printedbooks.html">Printed Books for Purchase</a>
-                <a href="notebookingandextras.html">Notebooking and Extras</a>
-                <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
-              </div>
-            </div>
-            
-            <div class="dropdown">
-              <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
-                
-              </button>
-              <div class="dropdown-content">
-                <a href="freedownloads.html">Free Downloads</a>
-              </div>
-            </div>
-            <a class="link" href="about.html">About</a>
-            <a class="link" href="FAQ.html">FAQ</a>
-            <a class="link" href="contact.html">Contact</a>
-            <a id="loginNav" class="link" href="login.html">Login</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+<body>
+  <header>
+    <div class="navbar" id="myTopnav">
+      <div class="lineContainer">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
+          </button>
+          <div class="dropdown-content">
+            <a href="aboutcurriculum.html">About Curriculum</a>
+            <a href="cycle1.html">Cycle 1</a>
+            <a href="cycle2.html">Cycle 2</a>
+            <a href="cycle3.html">Cycle 3</a>
+            <a href="preschool.html">Preschool</a>
+            <a href="printedbooks.html">Printed Books for Purchase</a>
+            <a href="notebookingandextras.html">Notebooking and Extras</a>
+            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
           </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
+
+          </button>
+          <div class="dropdown-content">
+            <a href="freedownloads.html">Free Downloads</a>
           </div>
+        </div>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="FAQ.html">FAQ</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a id="loginNav" class="link" href="login.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
 
 
-          <div class="homepageLogoDiv">
-            <a class="homepageLogoLink" href="index.html">
-              <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
-          </div>
-        </header>
+    <div class="homepageLogoDiv">
+      <a class="homepageLogoLink" href="index.html">
+        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+    </div>
+  </header>
 
-        <main>
+  <main>
 
-            <div class="slideshowContainer">
+    <div class="slideshowContainer">
 
-            <div class="homepageImgs fade">
-            <img id="homepageBackgroundRiver" src="images/homepageBackgroundRiver.jpg"
-                alt="River scene. Photo taken in Alaska." style="width:100%"> 
-                <div class="text">Caption Text</div>
+      <div class="homepageImgs fade">
+        <img id="homepageBackgroundRiver" src="images/homepageBackgroundRiver.jpg"
+          alt="River scene. Photo taken in Alaska." style="width:100%">
+        <div class="homepageCaptionText" style="top: 300px; left: 250px; color: white; font-family: 'Geneva', sans-serif;
+        ">
+          Lamp & Light Living<br>
+          <a href="about.html"><button class="homepageCaptionBtn">About</button></a>
+        </div>
 
-            </div>
-            <div class="homepageImgs fade">
-            <img id="deskImg" src="images/deskImage.jpg"
-            alt="Desk Image. Free use image from Unsplash." style="width:100%"> 
-            <div class="text">Bible-Based Homeschool Curriculum</div>
-
-            </div>
-
-            <div class="homepageImgs fade">
-                <img id="girlImg" src="images/homepageBackgroundGirl.jpg"
-                alt="Photo of a girl in a field with her arms up. Free use image from Unsplash." style="width:100%"> 
-                <div class="text">Bible-Based Homeschool Curriculum</div>
-    
-                </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="prevSlide()">❮</a>
-        <a class="next" onclick="showSlides()">❯</a>
+      </div>
+      <div class="homepageImgs fade">
+        <img id="deskImg" src="images/deskImage.jpg" alt="Desk Image. Free use image from Unsplash." style="width:100%">
+        <div class="homepageCaptionText">Bible-Based, <br>
+          Christain Homeschooling<br>
+          <a href="curriculum.html"><button class="homepageCaptionBtn">Free Curriculum</button></a>
 
         </div>
 
 
-        <div class="homepageButtonContainer">
-            <div id="downloadHomepageHomeschool">
-                    <h1>Christian Homeschool Curriculum</h1>
-               <h3>Free, Bible-based homeschool curriculum</h3>
-               <a href="curriculum.html"><button class="homepageDownloadButton">Download Here</button></a>
-            </div>
+      </div>
 
-            <div id="downloadHomepageStudies">
-            <h1>Free Bible Studies</h2>
-            <h3>Dive into God's Word</h3>
-            <a href="biblestudies.html"><button class="homepageDownloadButton">Download Here</button></a>
+      <div class="homepageImgs fade">
+        <img id="girlImg" src="images/homepageBackgroundGirl.jpg"
+          alt="Photo of a girl in a field with her arms up. Free use image from Unsplash." style="width:100%">
+        <div class="homepageCaptionText" style="top: 150px; left: 80px; color: white; 
+        ">
+          Study <br>
+          God's Word<br>
+          <a href="biblestudies.html"><button class="homepageCaptionBtn">Free Bible Studies</button></a>
         </div>
-     
 
 
-       
-    <script>
-            var timeOut = 2000;
+
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="prevSlide()">❮</a>
+      <a class="next" onclick="showSlides()">❯</a>
+
+    </div>
+
+
+    <div class="homepageButtonContainer">
+      <div id="downloadHomepageHomeschool">
+        <h1>Christian Homeschool Curriculum</h1>
+        <h3>Free, Bible-based homeschool curriculum</h3>
+        <a href="curriculum.html"><button class="homepageDownloadButton">Download Here</button></a>
+      </div>
+
+      <div id="downloadHomepageStudies">
+        <h1>Free Bible Studies</h2>
+          <h3>Dive into God's Word</h3>
+          <a href="biblestudies.html"><button class="homepageDownloadButton">Download Here</button></a>
+      </div>
+
+
+
+
+      <script>
+        var timeOut = 4000;
         var slideIndex = 0;
         var autoOn = true;
-        showSlides(); 
+        showSlides();
 
         autoSlides();
 
         function autoSlides() {
-            timeOut = timeOut - 20;
+          timeOut = timeOut - 20;
 
-            if (autoOn == true && timeOut < 0) {
-                showSlides();
-            }
-            setTimeout(autoSlides, 20);
+          if (autoOn == true && timeOut < 0) {
+            showSlides();
+          }
+          setTimeout(autoSlides, 20);
         }
 
         function prevSlide() {
 
-            timeOut = 2000;
+          timeOut = 4000;
 
-            var slides = document.getElementsByClassName("homepageImgs");
+          var slides = document.getElementsByClassName("homepageImgs");
 
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex--;
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex--;
 
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            if (slideIndex == 0) {
-                slideIndex = 3
-            }
-            slides[slideIndex - 1].style.display = "block";
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          if (slideIndex == 0) {
+            slideIndex = 3
+          }
+          slides[slideIndex - 1].style.display = "block";
         }
 
         function showSlides() {
 
-            timeOut = 2000;
+          timeOut = 4000;
 
-            var slides = document.getElementsByClassName("homepageImgs");
+          var slides = document.getElementsByClassName("homepageImgs");
 
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
 
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
         }
 
-    </script>
-
-  
-  
-        </main>
-
-
-        <footer>
-            © 2024 by Lamp and Light Living 
-        </footer>
+      </script>
 
 
 
-  </body>
+  </main>
+
+
+  <footer>
+    © 2024 by Lamp and Light Living
+  </footer>
+
+
+
+</body>
+
 </html>
