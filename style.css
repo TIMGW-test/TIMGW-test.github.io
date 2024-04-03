@@ -233,7 +233,7 @@ body {
 
   /* Homepage caption text */
   .homepageCaptionText {
-    font-size: 20px; 
+    font-size: 25px; 
     top: 20px; 
     left: 20px; 
   }
@@ -245,8 +245,6 @@ body {
     object-fit: cover; 
   }
 
- 
-
   #riverCaptionText{
     top:80px;
     left:50px;
@@ -256,7 +254,6 @@ body {
   .homepageCaptionBtn {
     padding: 4px 6px; 
     width: 110px; 
-    font: 5px;
   }
 
   /* Homepage button container */
@@ -281,6 +278,27 @@ body {
 .homepageDownloadButton {
   border: solid 2px #333;
   padding: 10px 70px;
+}
+
+#downloadHomepageStudies h3,
+#downloadHomepageHomeschool h3 {
+  display: none;
+}
+
+.homepageButtonContainer {
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#downloadHomepageHomeschool {
+  width: 100%;
+  text-align: center;
+}
+
+#downloadHomepageStudies {
+  width: 100%;
+  text-align: center;
 }
 
 
