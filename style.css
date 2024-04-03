@@ -224,11 +224,25 @@ body {
 /***************************** MOBILE Homepage *******************************/
 @media only screen and (max-width: 768px) {
 
+  .homepageLogo {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+
   /* Homepage caption text */
   .homepageCaptionText {
-    font-size: 16px; /* Decrease font size */
-    top: 20px; /* Adjust positioning */
-    left: 20px; /* Adjust positioning */
+    font-size: 16px; 
+    top: 20px; 
+    left: 20px; 
+  }
+
+  #homepageBackgroundRiver,
+  #deskImg,
+  #girlImg {
+    height: 300px; 
+    object-fit: cover; 
   }
 
   #girlImgCaptionText{
@@ -250,15 +264,31 @@ body {
 
   /* Homepage button container */
   .homepageButtonContainer {
-    padding-bottom: 20px; /* Adjust padding */
-    padding-top: 20px; /* Adjust padding */
+    padding-bottom: 20px; 
+    padding-top: 20px;
   }
 
   /* Homepage download button */
   .homepageDownloadButton {
-    padding: 8px 50px; /* Adjust padding */
+    padding: 8px 45px; 
   }
+
+
+/* Text styling for specific H classes */
+#downloadHomepageStudies h1,
+#downloadHomepageHomeschool h1 {
+  font-size: 25px;
 }
+
+/* The button for downloads at the buttom of the homepage */
+.homepageDownloadButton {
+  border: solid 2px #333;
+  padding: 10px 70px;
+}
+
+
+}
+
 
 
 
