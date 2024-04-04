@@ -7,15 +7,16 @@
   <title>Lamp and Light Living</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js"></script>
 
 </head>
 
 <body>
   <header>
-    <div class="navbar" id="myTopnav">
+    <div class="navbar" id="myTopNav">
       <div class="lineContainer">
-        <a href="index.html">Home</a>
+        <a class="link" href="index.html">Home</a>
         <div class="dropdown">
           <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
           </button>
@@ -43,9 +44,14 @@
         <a class="link" href="FAQ.html">FAQ</a>
         <a class="link" href="contact.html">Contact</a>
         <a id="loginNav" class="link" href="login.html">Login</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
+        
       </div>
+      
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+  </a>
 
 
     <div class="homepageLogoDiv">
@@ -61,7 +67,8 @@
       <div class="homepageImgs fade">
         <img id="homepageBackgroundRiver" src="images/homepageBackgroundRiver.jpg"
           alt="River scene. Photo taken in Alaska." style="width:100%">
-        <div class="homepageCaptionText" id="riverCaptionText">
+        <div class="homepageCaptionText" id="riverCaptionText" 
+        >
           Lamp & Light Living<br>
           <a href="about.html"><button class="homepageCaptionBtn">About</button></a>
         </div>
@@ -70,7 +77,7 @@
       <div class="homepageImgs fade">
         <img id="deskImg" src="images/deskImage.jpg" alt="Desk Image. Free use image from Unsplash." style="width:100%">
         <div class="homepageCaptionText">Bible-Based, <br>
-          Christain Homeschooling<br>
+          Christian Homeschooling<br>
           <a href="curriculum.html"><button class="homepageCaptionBtn">Free Curriculum</button></a>
 
         </div>
@@ -85,6 +92,7 @@
           Study <br>
           God's Word<br>
           <a href="biblestudies.html"><button class="homepageCaptionBtn">Free Bible Studies</button></a>
+
         </div>
 
 
