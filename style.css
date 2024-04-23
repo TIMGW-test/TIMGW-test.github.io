@@ -360,6 +360,10 @@ body {
   display: none;
 }
 
+.nav .icon-nav{
+  display: none;
+}
+
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
