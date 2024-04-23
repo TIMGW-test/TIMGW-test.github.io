@@ -355,7 +355,8 @@ body {
 
 
 /* Hide the link that should open and close the topnav on small screens */
-.navbar .icon {
+
+#nav-icon-bars{
   display: none;
 }
 
@@ -417,7 +418,7 @@ body {
 
 /***************************** MOBILE Navbar *******************************/
 @media only screen and (max-width: 768px) {
-  .icon {
+  .nav-icon-bars{
     display: block;
     color: black;
     float: right;
