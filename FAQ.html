@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlFAQ">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>That It May Go Well</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFAQ.css">
+
+     
   </head>
   <body>
     <header>
@@ -40,24 +43,171 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
       </div>
-
-        <a title="Cycle 1" href="index.html">
-            <img  class="homepageLogo" src="images/lampAndLightLogo.png"
-                alt="That it may go well logo"> </a>
-
+      <div class="homepageLogoDiv">
+        <a class="homepageLogoLink" href="index.html">
+          <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+      </div>
         </header>
 
         <main>
+          <div class="blackDivider">
+            <br>
+          </div>
 
+          <h1 class="FAQHeader">Frequently Asked Questions</h1>
+          <h4 class="FAQSubHeader">Find answers to some of our most common questions about Lamp and Light Living, <br>and That It May Go Well homeschool curriculum.</h4>
+
+
+          <div class="containerFAQ">
+        
+            <!-- This is the invisible switch for toggling the dropdowns to always close after another one is opened.-->
+                <div class="switch">
+                  <input id="switch-toggle" type="checkbox" role="switch" aria-labelledby="switch-label" />
+                </div>
+        
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-01" class="accordion-toggle" aria-controls="accordion-panel-01" aria-expanded="false">
+                  <h2 id="questionFAQ">Is this a one-year curriculum we use over and over?</h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-01" class="accordion-panel" aria-labelledby="accordion-toggle-01">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        Lord willing, this will be a three-year cycle that I intend to use twice in our children's 
+                        elementary years. My hope and prayer is that all three cycles will be completed for K-5th by the end of 2024. 
+                        The teacher's guide for each year should be saved and may be used again, 
+                        while student workbooks are consumable and you will need one at the grade 
+                        level of each child you are homeschooling that matches the corresponding cycle you are working through.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ">Do you sell printed copies?</h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        Yes! By the beginning of 2024 the preschool workbook and cycles 1 and 2 should be available to purchase through Amazon. 
+                        This is the most affordable printing I have found. I am sorry I am unable to ship directly and cannot accept returns. 
+                        We do not profit from the sale of the printed books. We offer this option simply as a service to you. 
+                        The prices of the books range based on the lowest cost that Amazon will allow me to offer them. 
+                        I have heard other homeschool families have been able to take similar books to Office Depot and have the spine cut off and the book spiral bound.
+                        You may want to consider that for the Student Workbooks as it makes work pages and writing easier. 
+                        
+                        <br>
+                        <br>
+                        My encouragement to you on printing if purchasing isn't an option:
+                        If your children are enrolled where you receive allotment funds consider how you can utilize those in printing this. 
+                        You are not actually paying for any Christian content so you would simply be using funding for printing services or 
+                        ink/paper/spiral binding. See if your school system can work with you to reimburse you!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ">What denomination is the curriculum?</h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        We are not affiliated with any denomination.
+                        We love the Lord and believe that Jesus is the Messiah. "That It May Go Well" 
+                        is written with value for both the Old Testament and the New Testament. We try 
+                        to stick with Scripture and validate all lessons from the Bible. Each cycle has 
+                        been/will be written to help you teach your children to be Biblically literate, hide God's Word
+                         in their hearts, live a kingdom-first lifestyle, actively share the Gospel, and be able to defend
+                         the faith. We believe that all Scripture is God-breathed and is useful for teaching, correcting, 
+                         and training in righteousness. While the New Testament was being written, the Old Testament was the 
+                         Scriptures that they had and searched to find out if the things spoken about Jesus were true. 
+                         We believe there is immense value in knowing both and understanding the story of Scripture from 
+                         beginning to end, from Genesis to Revelation.
+
+                        <br>
+                        <br>
+                        As always, we welcome you to make this fit for your family. 
+                        If there is something within the curriculum that your family disagrees with I encourage 
+                        you to teach your child, from the Bible, what you see differently. Over the years there 
+                        were many times I had to pause in resources we used and explain to our children, from the 
+                        Bible, why this wasn't exactly the way we believe. Because humans are fallible and I believe 
+                        that you are the best one to educate your child, I welcome you to use what is supplied in 
+                        "That It May Go Well" and omit anything that doesn't line up with what you believe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        
+          </div>
         </main>
 
-
         <footer>
-            © 2024 by Lamp and Light Living | thatitmaygowell.com
+            © 2024 by Lamp and Light Living
         </footer>
 
 
 
-	<script src="index.js"></script>
+        <script>
+          const btns = document.querySelectorAll(".accordion-toggle");
+          const soloSwitch = document.getElementById("switch-toggle");
+          const soloStatus = document.getElementById("switch-status");
+          
+          /* Internal state to store the last expanded panel. */
+          let lastActive = null;
+          
+          /* Utils function */
+          const isPanelExpanded = (btn) => btn.getAttribute("aria-expanded") === "true";
+          const closePanel = (panel) => panel.setAttribute("aria-expanded", "false");
+          
+          /* Use regular function declaration as callback for the event handler so the 'this' keyword can directly refer to the btn element. */
+          function onButtonToggle() {
+              const isSoloMode = soloSwitch.hasAttribute("checked");
+            
+              /* 1. In solo mode, collapse other expanded panels if any. */
+              if (isSoloMode) {
+                  btns.forEach((btn) => {
+                      if (btn !== this && isPanelExpanded(btn)) {
+                          closePanel(btn);
+                      }
+                  });
+              }
+            
+              /* 2. Expand/collapse selected panel by toggling attribute for the btn state (which trigger related panel visibility through CSS selector). */
+              this.setAttribute("aria-expanded", `${!isPanelExpanded(this)}`);
+            
+              /* 3. Update internal state. */
+              lastActive = this;
+          }
+      
+          // Set the switch to the ON state when the page loads
+          soloSwitch.setAttribute("checked", "true");
+      
+          btns.forEach((btn) => btn.addEventListener("click", onButtonToggle));
+      </script>
+      
+
   </body>
 </html>

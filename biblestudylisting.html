@@ -2,56 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lamp and Light Living</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-  <!-- START - We recommend to place the below code in head tag of your website html  -->
-  <style>
+    <title>That It May Go Well</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="xml.js"></script>
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
     @font-face {
       font-display: block;
       font-family: Roboto;
       src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
     }
-
+  
     @font-face {
       font-display: fallback;
       font-family: Roboto;
       font-weight: 600;
       src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
     }
-
+  
     @font-face {
       font-display: fallback;
       font-family: Roboto;
       font-weight: 700;
       src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
     }
-
+  
     #sib-container input:-ms-input-placeholder {
       text-align: left;
       font-family: "Helvetica", sans-serif;
       color: #c0ccda;
     }
-
+  
     #sib-container input::placeholder {
       text-align: left;
       font-family: "Helvetica", sans-serif;
       color: #c0ccda;
     }
-
+  
     #sib-container textarea::placeholder {
       text-align: left;
       font-family: "Helvetica", sans-serif;
       color: #c0ccda;
     }
-
+  
     #sib-container a {
       text-decoration: underline;
       color: #2BB2FC;
@@ -59,118 +56,58 @@
   </style>
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <!--  END - We recommend to place the above code in head tag of your website html -->
-
+  
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="lineContainer">
-        <a class="link" href="index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a> <i
-              class="fa-solid fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="aboutcurriculum.html">About Curriculum</a>
-            <a href="cycle1.html">Cycle 1</a>
-            <a href="cycle2.html">Cycle 2</a>
-            <a href="cycle3.html">Cycle 3</a>
-            <a href="preschool.html">Preschool</a>
-            <a href="printedbooks.html">Printed Books for Purchase</a>
-            <a href="notebookingandextras.html">Notebooking and Extras</a>
-            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+    <header>
+        <nav class="navbar">
+            <div class="navDiv">
+                <div class="directoryLinks">
+                    <a class="link" href="index.html" onclick="closeMenu()">Home</a>
+                    <a class="link" href="curriculum.html" onclick="closeMenu()">Curriculum</a>
+                    <a class="link" href="biblestudies.html" onclick="closeMenu()">Bible Studies</a>
+                    <a class="link" href="about.html" onclick="closeMenu()">About</a>
+                    <a class="link" href="FAQ.html" onclick="closeMenu()">FAQ</a>
+                    <a class="link" href="contact.html" onclick="closeMenu()">Contact</a>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="homepageLogoDiv">
+            <a class="homepageLogoLink" href="index.html">
+              <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
           </div>
-        </div>
 
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
+    </header>
 
-          </button>
-          <div class="dropdown-content">
-            <a href="freedownloads.html">Free Downloads</a>
+
+    <main>
+        
+        <div class="blackDivider">
+            <br>
           </div>
-        </div>
-        <a class="link" href="about.html">About</a>
-        <a class="link" href="FAQ.html">FAQ</a>
-        <a class="link" href="contact.html">Contact</a>
-        <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
-
-      </div>
-
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-    </a>
-
-
-    <div class="homepageLogoDiv">
-      <a href="index.html">
-        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
-    </div>
-  </header>
-
-  <main>
-
-    <div class="slideshowContainer">
-
-      <div class="homepageImgs fade">
-        <img id="homepageBackgroundRiver" src="images/homepageBackgroundRiver.jpg"
-          alt="River scene. Photo taken in Alaska." style="width:100%">
-        <div class="homepageCaptionText" id="riverCaptionText">
-          Lamp & Light Living<br>
-          <a href="about.html"><button class="homepageCaptionBtn">About</button></a>
+        <div id="detailedStudyContainer">
+            <div id="detailedStudyImgContainer">
+                <img id="studyImage" src="images/placeholderPhoto.png"
+                    alt="Image of the Bible study cover.">
+            </div>
+            <div id="detailedStudyTextContainer">
+                <div id="studyTitle">404 - back to <a href="index.html">home</a> </div> 
+                <div id="studyDescription">Template</div>
+                <br>
+                <br>
+        
+                <button id="studyDownloadButton" onclick="openPopUp()">Download Study</button>
+                
+            </div>
         </div>
 
-      </div>
-      <div class="homepageImgs fade">
-        <img id="deskImg" src="images/deskImage.jpg" alt="Desk Image. Free use image from Unsplash." style="width:100%">
-        <div class="homepageCaptionText">Bible-Based, <br>
-          Christian Homeschooling<br>
-          <a href="curriculum.html"><button class="homepageCaptionBtn">Free Curriculum</button></a>
+        <div id="popUpDownloadDiv">
 
-        </div>
-
-
-      </div>
-
-      <div class="homepageImgs fade">
-        <img id="girlImg" src="images/homepageBackgroundGirl.jpg"
-          alt="Photo of a girl in a field with her arms up. Free use image from Unsplash." style="width:100%">
-        <div class="homepageCaptionText" id="girlImgCaptionText">
-          Study <br>
-          God's Word<br>
-          <a href="biblestudies.html"><button class="homepageCaptionBtn">Free Bible Studies</button></a>
-
-        </div>
-
-
-
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="prevSlide()">❮</a>
-      <a class="next" onclick="showSlides()">❯</a>
-
-    </div>
-
-
-
-    <div class="homepageButtonContainer">
-      <div id="downloadHomepageHomeschool">
-        <h1>Christian Homeschool Curriculum</h1>
-        <h3>Free, Bible-based homeschool curriculum</h3>
-        <a href="curriculum.html"><button class="homepageDownloadButton">Download Here</button></a>
-      </div>
-
-      <div id="downloadHomepageStudies">
-        <h1>Free Bible Studies</h2>
-          <h3>Dive into God's Word</h3>
-          <a href="biblestudies.html"><button class="homepageDownloadButton">Download Here</button></a>
-      </div>
-    </div>
-
-
-    <!-- Begin Brevo Form -->
+<!-- Begin Brevo Form -->
     <!-- START - We recommend to place the below code where you want the form in your website html  -->
     <div class="sib-form" style="text-align: center;
          background-color: white; ">
@@ -275,17 +212,24 @@
               </div>
               <div id="errorMessageDiv"></div>
               <div style="padding: 8px 0;">
+                
                 <div class="sib-form-block" style="text-align: center">
+             <div class="sib-form-block__button-wrapper">
+                
                   <button class="sib-form-block__button sib-form-block__button-with-loader"
-                    style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:black; border-radius:3px; border-width:0px;"
-                    form="sib-form" type="submit">
+                    form="sib-form" type="submit" onclick="startDownload()">
                     <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
                       viewBox="0 0 512 512">
                       <path
                         d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
                     </svg>
-                    Subscribe
-                  </button>
+                    Subscribe & Start Download
+                  </button> 
+                  <a id="studyDownloadLink" href="" onclick="startDownload()" target="_blank" download><button class="declineBtn">
+                  No Thanks, Start Download
+                </button> </a>
+                
+            </div>
                 </div>
               </div>
 
@@ -297,104 +241,57 @@
     </div>
     <!-- END - We recommend to place the above code where you want the form in your website html  -->
 
+        </div>
+
+       
+    </main>
 
 
-
-    <script>
-      var timeOut = 4000;
-      var slideIndex = 0;
-      var autoOn = true;
-      showSlides();
-
-      autoSlides();
-
-      function autoSlides() {
-        timeOut = timeOut - 20;
-
-        if (autoOn == true && timeOut < 0) {
-          showSlides();
-        }
-        setTimeout(autoSlides, 20);
-      }
-
-      function prevSlide() {
-
-        timeOut = 4000;
-
-        var slides = document.getElementsByClassName("homepageImgs");
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex--;
-
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        if (slideIndex == 0) {
-          slideIndex = 3
-        }
-        slides[slideIndex - 1].style.display = "block";
-      }
-
-      function showSlides() {
-
-        timeOut = 4000;
-
-        var slides = document.getElementsByClassName("homepageImgs");
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-      }
-
-    </script>
-
-
-
-  </main>
-
-
-  <footer>
-    © 2024 by Lamp and Light Living
-
-    <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+    <footer>
+        © 2024 by Lamp and Light Living
+    
+        <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
     <script>
       window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
       window.LOCALE = 'en';
       window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
+    
       window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
+    
       window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-
-
-
+    
+    
+    
+    
       window.translation = {
         common: {
           selectedList: '{quantity} list selected',
           selectedLists: '{quantity} lists selected'
         }
       };
-
+    
       var AUTOHIDE = Boolean(0);
     </script>
-
+    
     <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-
+    
+    
     <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
     <!-- End Brevo Form -->
-  </footer>
+      </footer>
 
-
+      <script>
+        function startDownload() {
+            // Perform any actions needed before starting the download
+    
+            // Start the download directly
+            var downloadLink = document.getElementById("studyDownloadLink");
+            downloadLink.click();
+    
+            // Close the popup after initiating the download
+            closePopUp();
+        }
+    </script>
 
 </body>
 

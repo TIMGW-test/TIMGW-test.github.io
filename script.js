@@ -11,26 +11,43 @@ function myFunction() {
 
 
 
-/*function loadStudy(id, imageSrc) {
-  // Store the image source in localStorage to be accessed in the template page
-  localStorage.setItem('imageSrc', imageSrc);
-  localStorage.setItem('studyId', id);
-  console.log("I am working");
-}
+//window.onload = function () {
+//  closeMenu();
+//}; 
 
-function updateImage() {
-  // Retrieve the image source and ID from localStorage
-  var imageSrc = localStorage.getItem('imageSrc');
-  var studyId = localStorage.getItem('studyId');
+// Toggles the navigation menu
+function toggleMenu() {
+  var navbar = document.querySelector(".navbar");
+  var links = document.getElementById("links");
 
-  // Check if imageSrc and studyId are not null
-  if (imageSrc !== null && studyId !== null) {
-      // Update the image source
-      document.getElementById("bibleStudyImgTemplate").src = imageSrc;
-      // Clear the localStorage to prevent the image from being loaded again
-      localStorage.removeItem('imageSrc');
-      localStorage.removeItem('studyId');
+  if (navbar.style.display === "none" || navbar.style.display === "") {
+    navbar.style.display = "block"; 
+  } else {
+    navbar.style.display = "none"; 
   }
 }
 
-window.onload = updateImage; */
+
+// Closes the navigation menu
+// // function closeMenu() {
+// //   var links = document.getElementById("links");
+// //   var navbar = document.querySelector(".navbar");
+// //   if (links.style.display === "block") {
+// //       links.style.display = "none";
+// //       navbar.style.display = "none";
+// //   }
+// // }
+
+
+function openPopUp(){
+  var popUpDownloadDiv = document.getElementById("popUpDownloadDiv");
+  popUpDownloadDiv.style.display = "block"; 
+
+}
+
+function closePopUp(){
+  var popUpDownloadDiv = document.getElementById("popUpDownloadDiv");
+  popUpDownloadDiv.style.display = "none"; 
+
+}
+
