@@ -431,9 +431,6 @@ body {
 
   .navbar{
     display: none;
-    height: 200px;
-    padding-left: 0px;
-    background-color: #f2f2f2;
 
   }
 
@@ -1042,7 +1039,7 @@ footer {
 
 }
 
-#studyImage {
+#studyImage, #downloadImage {
   width: 600px;
   height: 600px;
 }
@@ -1055,7 +1052,7 @@ footer {
 
 }
 
-#studyTitle {
+#studyTitle, #downloadTitle{
   font-size: 40px;
   font-family: 'Geneva', sans-serif;
   color: #333;
@@ -1081,7 +1078,7 @@ footer {
 }
 
 
-#studyDescription {
+#studyDescription, #downloadDescription {
   padding-top: 20px;
   font-size: 14px;
   font-family: 'Geneva', sans-serif;
@@ -1106,18 +1103,11 @@ footer {
 
 
 
-/* Adjusting the style for the buttons container */
-.sib-form-block__button {
-  margin: 0 5px; /* Add some margin between the buttons */
-}
 
-.sib-form-block__button-wrapper {
-  display: flex; /* Use flexbox to arrange the buttons horizontally */
-  justify-content: center; /* Center the buttons horizontally */
-}
 
 /* Adjusting the style for individual buttons */
-.sib-form-block__button, .declineBtn {
+.sib-form-block__button {
+  display: block;
   font-size: 14px;
   font-weight: 700;
   font-family: Helvetica, sans-serif;
@@ -1128,3 +1118,19 @@ footer {
   padding: 10px 20px; /* Adjust button padding as needed */
   cursor: pointer;
 }
+
+.declineBtn{
+  display: block;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  color: #333!important;
+  border: none;
+  text-decoration: underline;
+  font-family: Helvetica, sans-serif;
+  margin-top: 10px;
+  width: fit-content;
+  margin: 10px auto;  
+  cursor: pointer;
+
+}
+
