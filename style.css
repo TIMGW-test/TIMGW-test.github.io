@@ -462,14 +462,11 @@ body {
   text-decoration: none;
   font-size: 16px;
   margin: 0;
-
-  padding-top: 10px;
+  padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
 
-  .dropdown{
-    padding-top: 10px;
-  }
 
   .navbar .lineContainer {
     border: none; 
@@ -490,7 +487,6 @@ body {
 
   .dropdown {
     position: static;
-    height: 20px;
   }
   .dropdown .dropbtn {
     display: block;
