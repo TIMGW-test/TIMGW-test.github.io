@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- below is for sure working, check use case of above link?  -->
+  <script src="https://kit.fontawesome.com/97132013e5.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 
 
@@ -68,8 +70,8 @@
       <div class="lineContainer">
         <a class="link" href="index.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a> 
-          </button>
+          <a class="link" href="curriculum.html">Homeschool Curriculum &nbsp;<i class="fa-solid fa-chevron-down" id="caretIcon" onclick=""></i></a> 
+
           <div class="dropdown-content curriculum-dropdown">
             <a href="aboutcurriculum.html">About Curriculum</a>
             <a href="cycle1.html">Cycle 1</a>
@@ -83,9 +85,8 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies</a>
-
-          </button>
+        <a class="link" href="biblestudies.html">Bible Studies &nbsp;<i class="fa-solid fa-chevron-down" id="caretIcon" onclick=""></i></a>
+       
           <div class="dropdown-content bible-dropdown">
             <a href="freedownloads.html">Free Downloads</a>
           </div>

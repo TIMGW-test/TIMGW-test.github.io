@@ -359,11 +359,15 @@ body {
   display: none;
 }
 
+#caretIcon{
+  display: none;
+}
+
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
-  overflow: hidden;
+  text-align: center;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -380,6 +384,7 @@ body {
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
+  margin-top: 40px;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -451,14 +456,20 @@ body {
 
   .navbar a {
   display: block;
+  float: none;
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 0;
 
+  padding-top: 10px;
+
   }
 
+  .dropdown{
+    padding-top: 10px;
+  }
 
   .navbar .lineContainer {
     border: none; 
@@ -468,6 +479,12 @@ body {
     height: 100px;
     text-align: center;
     padding: 0;
+    margin-top: 30px;
+  }
+
+ .lineContainer .dropdown{
+    text-align: center;
+
   }
 
 
@@ -481,6 +498,9 @@ body {
     text-align: left;
   }
 
+ #caretIcon{
+  display: inline-block;
+ }
 
 
     /* Make dropdown links taller for Homeschool Curriculum */
@@ -514,10 +534,8 @@ body {
     text-align: left;
     margin: 0;
   }
+
   
-
-
-
   
 }
 
@@ -570,8 +588,7 @@ footer {
   margin-bottom: 0;
   bottom: 0;
   position: relative;
-  width: 100%;
-
+  width: auto;
 }
 
 .container {
@@ -1132,8 +1149,6 @@ footer {
   border: #333 solid 2px;
   font-family: "Trebuchet MS", sans-serif;
   transition: 0.7s ease;
-  justify-content: center;
-  display: block;
   margin: 0 auto;
 
 }
