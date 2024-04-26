@@ -359,9 +359,10 @@ body {
   display: none;
 }
 
-#caretIcon{
+.caretIcon{
   display: none;
 }
+
 
 
 /* Dropdown container - needed to position the dropdown content */
@@ -471,7 +472,7 @@ body {
     position: relative;
   }
 
-  #caretIcon{
+  .caretIcon{
     margin-left: 7px;
   }
 
@@ -509,7 +510,7 @@ body {
     text-align: left;
   }
 
- #caretIcon{
+ .caretIcon{
   display: inline-block;
  }
 
@@ -1120,7 +1121,7 @@ footer {
 
 }
 
-#studyImage, #downloadImage {
+#studyImage, #downloadImage, #curriculumImage {
   width: 600px;
   height: 600px;
 }
@@ -1133,7 +1134,7 @@ footer {
 
 }
 
-#studyTitle, #downloadTitle{
+#studyTitle, #downloadTitle, #curriculumTitle{
   font-size: 40px;
   font-family: 'Geneva', sans-serif;
   color: #333;
@@ -1157,7 +1158,7 @@ footer {
 }
 
 
-#studyDescription, #downloadDescription {
+#studyDescription, #downloadDescription, #curriculumDescription {
   padding-top: 20px;
   font-size: 14px;
   font-family: 'Geneva', sans-serif;
@@ -1213,3 +1214,27 @@ footer {
 
 }
 
+
+#aboutCurriculumOpeningText{
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+  font-family: Didot, serif;
+  font-size: 20px;
+}
+
+#aboutCurriculumVideoContainer{
+text-align: center;
+margin-top: 30px;
+}
+
+#aboutCurriculumInfoSheetContainer {
+  text-align: center;
+  margin-top: 30px;
+
+}
+#curriculumInfoSheet {
+  max-width: 50%;
+  height: auto;
+  
+}
