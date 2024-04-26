@@ -50,4 +50,35 @@ function closePopUp(){
   popUpDownloadDiv.style.display = "none"; 
 
 }
+// JavaScript to handle click event on the caret icon
+// document.getElementById('caretIcon').addEventListener('click', function(event) {
+//   // Prevent the default behavior of the caret icon (i.e., following the link)
+//   event.preventDefault();
+//   // Get the dropdown content
+//   var dropdownContent = document.querySelector('.curriculum-dropdown');
+//   // Set the display to "none" to hide the dropdown content
+//   dropdownContent.style.display = "none";
+// });
+
+function toggleCaret() {
+  // Check if the screen width is below 768px (indicating mobile)
+  if (window.innerWidth < 768) {
+    const carets = document.querySelectorAll('.fa-solid.fa-chevron-down');
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+    for (let i = 0; i < carets.length; i++) {
+      const caret = carets[i];
+      const dropdownContent = dropdownContents[i];
+
+      if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+        dropdownContent.style.display = "block"; 
+      } else {
+        dropdownContent.style.display = "none"; 
+      }
+    }
+    console.log("am I called?");
+  }
+}
+
+
 

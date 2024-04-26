@@ -359,8 +359,8 @@ body {
   display: none;
 }
 
-.caretIcon{
-  display: none;
+.fa-solid.fa-chevron-down {
+    display: none;
 }
 
 
@@ -472,8 +472,8 @@ body {
     position: relative;
   }
 
-  .caretIcon{
-    margin-left: 7px;
+  .fa-solid.fa-chevron-down {
+        margin-left: 7px;
   }
 
 
@@ -510,8 +510,8 @@ body {
     text-align: left;
   }
 
- .caretIcon{
-  display: inline-block;
+  .fa-solid.fa-chevron-down {
+      display: inline-block;
  }
 
 
