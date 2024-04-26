@@ -63,8 +63,7 @@ function closePopUp(){
 function toggleCaret(dropdownId) {
   // Check if the screen width is below 768px (indicating mobile)
   if (window.innerWidth < 768) {
-    const caret = document.querySelector(`#${dropdownId} + .dropdownContainer .fa-solid.fa-chevron-down`);
-    const dropdownContent = document.querySelector(`#${dropdownId}.dropdown-content`);
+    const dropdownContent = document.getElementById(dropdownId);
 
     if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
       dropdownContent.style.display = "block"; 
@@ -74,6 +73,7 @@ function toggleCaret(dropdownId) {
     console.log("am I called?");
   }
 }
+
 
 
 
