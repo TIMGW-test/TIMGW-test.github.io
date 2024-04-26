@@ -355,7 +355,7 @@ body {
 
 /* Hide the link that should open and close the topnav on small screens */
 
-.navIcon{
+.navIconOpen, .navIconClose{
   display: none;
 }
 
@@ -427,7 +427,8 @@ body {
 
 
 
-    .navIcon{
+
+    .navIconOpen, .navIconClose{
       display: block;
       text-decoration: none;
       color:black;
@@ -439,13 +440,16 @@ body {
       z-index: 13;
     }
 
+    .navIconClose{
+      display:none;
+    }
+    
   .navbar{
     display: none;
     background-color: #FFFFFF;
     color: black;
-    height: 400px;
+    height: 100%;
     width: 100%;
-
     position: fixed; 
     top: 0; 
     z-index: 12;
@@ -461,9 +465,9 @@ body {
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
@@ -473,7 +477,7 @@ body {
   }
 
   .fa-solid.fa-chevron-down {
-        margin-left: 7px;
+  margin-left: 10px;
   }
 
 
@@ -494,7 +498,7 @@ body {
     height: 100px;
     text-align: center;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 80px;
   }
 
  .lineContainer .dropdown{

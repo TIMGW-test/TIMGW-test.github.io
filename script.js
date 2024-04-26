@@ -18,12 +18,21 @@ function myFunction() {
 // Toggles the navigation menu
 function toggleMenu() {
   var navbar = document.querySelector(".navbar");
-  var links = document.getElementById("links");
+  var open = document.querySelector(".navIconOpen");
+  var close = document.querySelector(".navIconClose");
+
 
   if (navbar.style.display === "none" || navbar.style.display === "") {
     navbar.style.display = "block"; 
+    close.style.display = "block";
+    open.style.display = "none";
+
   } else {
     navbar.style.display = "none"; 
+    open.style.display = "block";
+    close.style.display = "none";
+
+
   }
 }
 
