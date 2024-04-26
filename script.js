@@ -86,3 +86,24 @@ function toggleCaret(dropdownId) {
 
 
 
+
+
+// JavaScript to handle click event on the caret icon
+document.getElementById('caretIcon').addEventListener('click', function() {
+  // Toggle the display of the dropdown content
+  var dropdownContent = document.querySelector('.curriculum-dropdown');
+  dropdownContent.classList.toggle('show');
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#caretIcon')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content');
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};

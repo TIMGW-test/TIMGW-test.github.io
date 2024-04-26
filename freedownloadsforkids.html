@@ -3,49 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>That It May Go Well</title>
+    <title>Lamp and Light Living</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <div class="navbar" id="myTopnav">
+      <div class="navbar">
         <div class="lineContainer">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
-          </button>
-          <div class="dropdown-content">
-            <a href="aboutcurriculum.html">About Curriculum</a>
-            <a href="cycle1.html">Cycle 1</a>
-            <a href="cycle2.html">Cycle 2</a>
-            <a href="cycle3.html">Cycle 3</a>
-            <a href="preschool.html">Preschool</a>
-            <a href="printedbooks.html">Printed Books for Purchase</a>
-            <a href="notebookingandextras.html">Notebooking and Extras</a>
-            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+          <a class="link" href="index.html">Home</a>
+          <div class="dropdown">
+              <div class="dropdownContainer">
+            <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
+              </div>
+            <div class="dropdown-content" id="curriculumdropdown">
+              <a href="aboutcurriculum.html">About Curriculum</a>
+              <a href="cycle1.html">Cycle 1</a>
+              <a href="cycle2.html">Cycle 2</a>
+              <a href="cycle3.html">Cycle 3</a>
+              <a href="preschool.html">Preschool</a>
+              <a href="printedbooks.html">Printed Books for Purchase</a>
+              <a href="notebookingandextras.html">Notebooking and Extras</a>
+              <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+            </div>
           </div>
+  
+          <div class="dropdown">
+            <div class="dropdownContainer">
+          <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
         </div>
-        
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
-            
-          </button>
-          <div class="dropdown-content">
-            <a href="freedownloads.html">Free Downloads</a>
+            <div class="dropdown-content" id="biblestudydropdown">
+              <a href="freedownloads.html">Free Downloads</a>
+            </div>
           </div>
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="FAQ.html">FAQ</a>
+          <a class="link" href="contact.html">Contact</a>
+          <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+  
         </div>
-        <a class="link" href="about.html">About</a>
-        <a class="link" href="FAQ.html">FAQ</a>
-        <a class="link" href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  
       </div>
-      </div>
-
+  
+      <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+      <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+  
       <div class="homepageLogoDiv">
-        <a class="homepageLogoLink" href="index.html">
+        <a href="index.html">
           <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
       </div>
-      </header>
+    </header>
 
         <main>
           <div class="blackDivider">

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp and Light Living</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="lineContainer">
+        <a class="link" href="index.html">Home</a>
+        <div class="dropdown">
+            <div class="dropdownContainer">
+          <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
+            </div>
+          <div class="dropdown-content" id="curriculumdropdown">
+            <a href="aboutcurriculum.html">About Curriculum</a>
+            <a href="cycle1.html">Cycle 1</a>
+            <a href="cycle2.html">Cycle 2</a>
+            <a href="cycle3.html">Cycle 3</a>
+            <a href="preschool.html">Preschool</a>
+            <a href="printedbooks.html">Printed Books for Purchase</a>
+            <a href="notebookingandextras.html">Notebooking and Extras</a>
+            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdownContainer">
+        <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
+      </div>
+          <div class="dropdown-content" id="biblestudydropdown">
+            <a href="freedownloads.html">Free Downloads</a>
+          </div>
+        </div>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="FAQ.html">FAQ</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+
+      </div>
+
+    </div>
+
+    <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+    <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+
+    <div class="homepageLogoDiv">
+      <a href="index.html">
+        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+    </div>
+  </header>
+<main>
+
+  <div class="blackDivider">
+    <br>
+  </div>
+<div id="aboutCurriculumOpeningText">
+  That It May Go Well is a completely free Christian homeschool curriculum for Preschool-5th grade.<br>
+It is a family-style curriculum, geared toward homeschooling multiple children.  <br>
+(Although it also works well for one child!)<br>
+
+<br>
+What makes That It May Go Well unique? It is truly Bible-based. <br>
+The goal of this curriculum is a complete foundation on God's Word and not just a Christian worldview. <br>
+It is a hybrid approach combining unit studies, living books, Creation/outdoor studies, and a responsible <br>
+use of technology. As a mom of four, I needed a curriculum that offered some structure but was also based 
+<br>firmly on the Bible. This is a homeschool mom authored; mom created curriculum with your family in mind.<br>
+The goal is raising arrows who will love Jesus and desire to share Him with the world while still <br>maintaining strong academic standards. 
+
+</div>
+  <div id="aboutCurriculumVideoContainer">
+  <video width="920" height="540" controls>
+    <source src="videos/Info That It May Go Well.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
+
+<div id="aboutCurriculumInfoSheetContainer">
+
+  <img src="images/aboutCurriculumSheet.jpg" id="curriculumInfoSheet">
+</div>
+
+  </main>
+
+
+  <footer>
+    © 2024 by Lamp and Light Living
+  </footer>
+
+
+
+</body>
+
+</html>

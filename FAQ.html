@@ -3,51 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>That It May Go Well</title>
+    <title>Lamp and Light Living</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleFAQ.css">
 
-     
+     <!-- Credit to much of this page's functionality to Denis Dezest - https://codepen.io/ddZ6ii -->
   </head>
   <body>
     <header>
-      <div class="navbar" id="myTopnav">
+      <div class="navbar">
         <div class="lineContainer">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
-          </button>
-          <div class="dropdown-content">
-            <a href="aboutcurriculum.html">About Curriculum</a>
-            <a href="cycle1.html">Cycle 1</a>
-            <a href="cycle2.html">Cycle 2</a>
-            <a href="cycle3.html">Cycle 3</a>
-            <a href="preschool.html">Preschool</a>
-            <a href="printedbooks.html">Printed Books for Purchase</a>
-            <a href="notebookingandextras.html">Notebooking and Extras</a>
-            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+          <a class="link" href="index.html">Home</a>
+          <div class="dropdown">
+              <div class="dropdownContainer">
+            <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
+              </div>
+            <div class="dropdown-content" id="curriculumdropdown">
+              <a href="aboutcurriculum.html">About Curriculum</a>
+              <a href="cycle1.html">Cycle 1</a>
+              <a href="cycle2.html">Cycle 2</a>
+              <a href="cycle3.html">Cycle 3</a>
+              <a href="preschool.html">Preschool</a>
+              <a href="printedbooks.html">Printed Books for Purchase</a>
+              <a href="notebookingandextras.html">Notebooking and Extras</a>
+              <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+            </div>
           </div>
+  
+          <div class="dropdown">
+            <div class="dropdownContainer">
+          <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
         </div>
-        
-        <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
-            
-          </button>
-          <div class="dropdown-content">
-            <a href="freedownloads.html">Free Downloads</a>
+            <div class="dropdown-content" id="biblestudydropdown">
+              <a href="freedownloads.html">Free Downloads</a>
+            </div>
           </div>
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="FAQ.html">FAQ</a>
+          <a class="link" href="contact.html">Contact</a>
+          <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+  
         </div>
-        <a class="link" href="about.html">About</a>
-        <a class="link" href="FAQ.html">FAQ</a>
-        <a class="link" href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  
       </div>
-      </div>
+  
+      <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+      <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+  
       <div class="homepageLogoDiv">
-        <a class="homepageLogoLink" href="index.html">
+        <a href="index.html">
           <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
       </div>
-        </header>
+    </header>
 
         <main>
           <div class="blackDivider">
@@ -160,7 +167,160 @@
                 </div>
               </div>
             </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ">What version of the Bible does That It May Go Well use?</h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        That It May Go Well uses the NIV version. Feel free to read the recommended Scriptures from any version you wish!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ">Will you have 6th+ grade?</h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        We do not know at this time- We are open to going through any door the Lord opens. But, at this time we aren't sure if higher grades will be available.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ">How long will it take me to homeschool each day?
+                  </h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        An average of 2-4 hours, roughly, depending on the ages of the children you are schooling. For Preschool plan to spend 1 hour 2-3 times a week.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
         
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ"> What subjects are covered?
+                  </h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        As a hybrid approach to homeschooling, we pull from many of the most popular homeschool methods to create a family-friendly, nearly all-in-one curriculum covering <b>Bible, Language Arts Reading, Writing, Penmanship, History & Geography, Science, and Art. </b>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ"> Is this just a Bible curriculum?
+                  </h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        No! :&#41; That It May Go Well covers so much more than just a Bible curriculum, although we use the Bible as the foundation to teach nearly every other subject. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ"> Will I need additional books? 
+                  </h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        Yes, as a hybrid approach, we do utilize other books, sometimes called "Living Books". You will need a world atlas for cycle 1, a USA atlas for cycle 2 (or a similar book for your country), and books to study historical people and events of interest to you and your children. We also encourage you to have a variety of age-appropriate reading material available for your children for their individual reading time. (See our recommendations for ideas!)       
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sectionFAQ">
+              <div class="accordion">
+                <button type="button" id="accordion-toggle-02" class="accordion-toggle" aria-controls="accordion-panel-02" aria-expanded="false">
+                  <h2 id="questionFAQ"> What additional books do you recommend?
+                  </h2>
+                  <span class="btn-icon" aria-hidden="true"></span>
+                </button>
+                <div id="accordion-panel-02" class="accordion-panel" aria-labelledby="accordion-toggle-02">
+                  <!-- Additional div to smoothen grid 0 -> 1fr transition -->
+                  <div class="accordion-drawer">
+                    <!-- Additional div to add padding to the content without messing with the animation -->
+                    <div class="content-container">
+                      <p id="questionAnswerFAQ">
+                        - World Atlas and USA Atlas from Master's Books<br>
+
+                        - YWAM Publishing Heros of History books + their missionary series is phenomenal! (We used the missionary series for Cycle 1 and the Heros of History for Cycle 2) <br>
+                        
+                        - Beginner Bible for 1st grade reading practice <br>
+                        
+                        - Secret of the Hidden Scrolls, Scripture Sleuth, and Sugar Creek Gang for 3rd+ reading (or to read aloud to your children!)<br> 
+
+                        - The Libby App, a free app where you can enjoy ebooks, digital audiobooks, and magazines from your public library, all you need is a library card. Check out <a href="https://help.libbyapp.com/en-us/6144.htm#:~:text=Libby%20is%20a%20free%20app,Is%20Libby%20free%20to%20use%3F">Libby</a>.
+                         </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
 

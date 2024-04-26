@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>That It May Go Well</title>
+    <title>Lamp and Light Living</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="xml.js"></script>
+    <script src="xmlcurriculumscript.js"></script>
 <!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
     @font-face {
@@ -60,28 +60,51 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navDiv">
-                <div class="directoryLinks">
-                    <a class="link" href="index.html" onclick="closeMenu()">Home</a>
-                    <a class="link" href="curriculum.html" onclick="closeMenu()">Curriculum</a>
-                    <a class="link" href="biblestudies.html" onclick="closeMenu()">Bible Studies</a>
-                    <a class="link" href="about.html" onclick="closeMenu()">About</a>
-                    <a class="link" href="FAQ.html" onclick="closeMenu()">FAQ</a>
-                    <a class="link" href="contact.html" onclick="closeMenu()">Contact</a>
-                </div>
-
+  <header>
+    <div class="navbar">
+      <div class="lineContainer">
+        <a class="link" href="index.html">Home</a>
+        <div class="dropdown">
+            <div class="dropdownContainer">
+          <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
             </div>
-
-        </nav>
-
-        <div class="homepageLogoDiv">
-            <a class="homepageLogoLink" href="index.html">
-              <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+          <div class="dropdown-content" id="curriculumdropdown">
+            <a href="aboutcurriculum.html">About Curriculum</a>
+            <a href="cycle1.html">Cycle 1</a>
+            <a href="cycle2.html">Cycle 2</a>
+            <a href="cycle3.html">Cycle 3</a>
+            <a href="preschool.html">Preschool</a>
+            <a href="printedbooks.html">Printed Books for Purchase</a>
+            <a href="notebookingandextras.html">Notebooking and Extras</a>
+            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
           </div>
+        </div>
 
-    </header>
+        <div class="dropdown">
+          <div class="dropdownContainer">
+        <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
+      </div>
+          <div class="dropdown-content" id="biblestudydropdown">
+            <a href="freedownloads.html">Free Downloads</a>
+          </div>
+        </div>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="FAQ.html">FAQ</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+
+      </div>
+
+    </div>
+
+    <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+    <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+
+    <div class="homepageLogoDiv">
+      <a href="index.html">
+        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+    </div>
+  </header>
 
 
     <main>
@@ -91,12 +114,13 @@
           </div>
         <div id="detailedStudyContainer">
             <div id="detailedStudyImgContainer">
-                <img id="studyImage" src="images/placeholderPhoto.png"
-                    alt="Image of the Bible study cover.">
+                <img id="curriculumImage" src="images/placeholderPhoto.png"
+                    alt="Image of the curriculum book cover.">
             </div>
             <div id="detailedStudyTextContainer">
-                <div id="studyTitle">404 - back to <a href="index.html">home</a> </div> 
-                <div id="studyDescription">Template</div>
+                <div id="curriculumTitle">404 - back to <a href="index.html">home </a></div> 
+                <div id="curriculumDescription">Template</div>
+                
                 <br>
                 <br>
         
@@ -225,7 +249,7 @@
                     </svg>
                     Subscribe & Start Download
                   </button> 
-                  <a id="studyDownloadLink" href="" onclick="startDownload()" target="_blank" download><button class="declineBtn">
+                  <a id="downloadLink" href="" onclick="startDownload()" target="_blank" download><button class="declineBtn">
                   No Thanks, Start Download
                 </button> </a>
                 
@@ -285,7 +309,7 @@
             // Perform any actions needed before starting the download
     
             // Start the download directly
-            var downloadLink = document.getElementById("studyDownloadLink");
+            var downloadLink = document.getElementById("downloadLink");
             downloadLink.click();
     
             // Close the popup after initiating the download

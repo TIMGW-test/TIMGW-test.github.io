@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+
+<curriculumListing>
+    <id>cycle1teacherguide</id>
+    <title>Cycle 1, Teacher Guide</title>
+    <description>
+        <b>* Please note: This is designed to be used with a student workbook, don't forget to download the appropriate book for your child.</b>
+
+
+        That It May Go Well is a Christian family-style homeschool curriculum offered for free from Lamp and Light Living. For more information please visit our about page and FAQ blog post.
+    </description>
+    <image>images/curriculum_graphics/cycle1_teachersguide.png</image>
+    <pdf>assets/curriculum/Cycle 1 Teacher Guide - That It May Go Well.pdf</pdf> 
+</curriculumListing>
+
+<curriculumListing>
+    <id>cycle1kindergarten</id>
+    <title>Cycle 1, Kindergarten Workbook</title>
+    <description>
+        <b>* Please note: This is designed to be used with a student workbook, don't forget to download the appropriate book for your child.</b>
+
+
+        That It May Go Well is a Christian family-style homeschool curriculum offered for free from Lamp and Light Living. For more information please visit our about page and FAQ blog post.
+    </description>
+    <image>images/curriculum_graphics/cycle1_kindergarten.png</image>
+    <pdf>assets/curriculum/Cycle 1 Kindergarten Workbook - That It May Go Well.pdf</pdf> 
+</curriculumListing>
+
+<curriculumListing>
+    <id>cycle1firstgrade</id>
+    <title>Cycle 1, First Grade Workbook</title>
+    <description>
+        <b>* Please note: This is designed to be used with a student workbook, don't forget to download the appropriate book for your child.</b>
+
+
+        That It May Go Well is a Christian family-style homeschool curriculum offered for free from Lamp and Light Living. For more information please visit our about page and FAQ blog post.
+    </description>
+    <image>images/curriculum_graphics/cycle1_firstgrade.png</image>
+    <pdf>assets/curriculum/Cycle 1 First Grade Workbook- That It May Go Well.pdf</pdf> 
+</curriculumListing>
+
+<curriculumListing>
+    <id>cycle1secondandthirdgrade</id>
+    <title>Cycle 1, Second and Third Grade Workbook</title>
+    <description>
+        <b>* Please note: This is designed to be used with a student workbook, don't forget to download the appropriate book for your child.</b>
+
+
+        That It May Go Well is a Christian family-style homeschool curriculum offered for free from Lamp and Light Living. For more information please visit our about page and FAQ blog post.
+    </description>
+    <image>images/curriculum_graphics/cycle1_secondandthirdgrade.png</image>
+    <pdf>assets/curriculum/Cycle 1 Second and Third Grade Workbook- That It May Go Well.pdf</pdf> 
+</curriculumListing>
+
+<curriculumListing>
+    <id>cycle1fourthandfifthgrade</id>
+    <title>Cycle 1, Fourth and Fifth Grade Workbook</title>
+    <description>
+        <b>* Please note: This is designed to be used with a student workbook, don't forget to download the appropriate book for your child.</b>
+
+
+        That It May Go Well is a Christian family-style homeschool curriculum offered for free from Lamp and Light Living. For more information please visit our about page and FAQ blog post.
+    </description>
+    <image>images/curriculum_graphics/cycle1_fourthandfifthgrade.png</image>
+    <pdf>assets/curriculum/Cycle 1 Fourth and Fifth Grade Workbook - That It May Go Well.pdf</pdf> 
+</curriculumListing>
+</curriculum>

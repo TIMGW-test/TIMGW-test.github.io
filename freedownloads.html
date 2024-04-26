@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>That It May Go Well</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="navbar" id="myTopnav">
-        <div class="lineContainer">
-        <a href="index.html">Home</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp and Light Living</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="lineContainer">
+        <a class="link" href="index.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="curriculum.html">Homeschool Curriculum</a>
-          </button>
-          <div class="dropdown-content">
+            <div class="dropdownContainer">
+          <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
+            </div>
+          <div class="dropdown-content" id="curriculumdropdown">
             <a href="aboutcurriculum.html">About Curriculum</a>
             <a href="cycle1.html">Cycle 1</a>
             <a href="cycle2.html">Cycle 2</a>
@@ -25,229 +29,151 @@
             <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
           </div>
         </div>
-        
+
         <div class="dropdown">
-          <button class="dropbtn"><a class="link" href="biblestudies.html">Bible Studies </a>
-            
-          </button>
-          <div class="dropdown-content">
+          <div class="dropdownContainer">
+        <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
+      </div>
+          <div class="dropdown-content" id="biblestudydropdown">
             <a href="freedownloads.html">Free Downloads</a>
           </div>
         </div>
         <a class="link" href="about.html">About</a>
         <a class="link" href="FAQ.html">FAQ</a>
         <a class="link" href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+
       </div>
-      </div>
 
-      <div class="homepageLogoDiv">
-        <a class="homepageLogoLink" href="index.html">
-          <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
-      </div>
-      </header>
+    </div>
 
-        <main>
-          <div class="blackDivider">
-            <br>
-          </div>
-            <h1 class="freeDownloadsHeader"> Free Downloads</h1>
-              <h4 class="freeDownloadsSubHeader">Find a variety of free downloads here! Planners, downloads to share the gospel, and ways to serve others.</h4>
-              <h4 class="freeDownloadsSubHeader">Looking for free kid downloads? 
-                <br>
-                <a href="freedownloadsforkids.html" target="_blank"> <button class="freeKidDownloadsButton"> Free Kid Downloads</button> </a> </h4>
+    <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+    <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+
+    <div class="homepageLogoDiv">
+      <a href="index.html">
+        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="blackDivider">
+      <br>
+    </div>
+    <h1 class="freeDownloadsHeader"> Free Downloads</h1>
+    <h4 class="freeDownloadsSubHeader">Find a variety of free downloads here! Planners, downloads to share the gospel,
+      and ways to serve others.</h4>
+    <h4 class="freeDownloadsSubHeader">Looking for free kid downloads?
+      <br>
+      <a href="freedownloadsforkids.html" target="_blank"> <button class="freeKidDownloadsButton"> Free Kid
+          Downloads</button> </a>
+    </h4>
 
 
 
-           <!-- Free Downloads -->
-           <div class="freeDownloadsDivContainer"> 
-    <div class="freeBibleStudiesDiv">
+    <!-- Free Downloads -->
+    <div class="freeDownloadsDivContainer">
+      <div class="freeBibleStudiesDiv">
 
-    <div class="freeDownloadListing">
-      <div class="container">
-      <a title="Planner" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-              src="images/freedownloads_graphics/plannerFloral.png"
-              alt="An image of the a floral daily planner cover."> 
+        <div class="freeDownloadListing">
+          <div class="container">
+            <a title="Planner" href="downloadlisting.html?freedownload=planner"> <img
+                class="freeDownloadListingImg" src="images/freedownloads_graphics/plannerFloral.png"
+                alt="An image of the a floral daily planner cover.">
 
-              <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
               </div>
-            </div>
-              <span class="freeDownloadListingText">
-                <br>
-                Planner<br>
-                <span class ="freeDownloadText">Free Download <br> </span>
-                <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-                <br>   
-            </span></a>
-  </div>
-
-  <div class="freeDownloadListing">
-    <div class="container">
-    <a title="Good News Cards" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/goodNewsCards.jpg"
-            alt="An image of the a floral daily planner cover."> 
-
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
           </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Share the Gospel! - Gift the Good News<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
+          <span class="freeDownloadListingText">
+            <br>
+            Planner<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
           </span></a>
-</div>
+        </div>
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Joy Bag Printables" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/joyBagPrintables.png"
-            alt="Joy bag printables."> 
+        <div class="freeDownloadListing">
+          <div class="container">
+            <a title="Good News Cards" href="downloadlisting.html?freedownload=goodnewscards"> <img
+                class="freeDownloadListingImg" src="images/freedownloads_graphics/goodNewsCards.jpg"
+                alt="An image of the a floral daily planner cover.">
 
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
           </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Joy Bag Printables<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
+          <span class="freeDownloadListingText">
+            <br>
+            Share the Gospel! - Gift the Good News<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
           </span></a>
-</div>
+        </div>
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Bread Printable" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/breadPrintable.png"
-            alt="Bread bag printable."> 
+        <div class="freeDownloadListing">
+          <div class="container">
+            <a title="Joy Bag Printables" href="downloadlisting.html?freedownload=joybagprintables"> <img
+                class="freeDownloadListingImg" src="images/freedownloads_graphics/joyBagPrintables.png"
+                alt="Joy bag printables.">
 
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
           </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Bread Bag Printables<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
+          <span class="freeDownloadListingText">
+            <br>
+            Joy Bag Printables<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
           </span></a>
-</div>
+        </div>
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Happy Sukkot Card" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/happySukkotCard.png"
-            alt="Happy Sukkot Card Printable."> 
+        <div class="freeDownloadListing">
+          <div class="container">
+            <a title="Bread Printable" href="downloadlisting.html?freedownload=breadprintable"> <img
+                class="freeDownloadListingImg" src="images/freedownloads_graphics/breadPrintable.png"
+                alt="Bread bag printable.">
 
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
           </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Sukkot/Feast of Tabernacles Printables<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
+          <span class="freeDownloadListingText">
+            <br>
+            Bread Bag Printables<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
           </span></a>
-</div>
+        </div>
 
+        <div class="freeDownloadListing">
+          <div class="container">
+            <a title="Happy Sukkot Card" href="downloadlisting.html?freedownload=happysukkotcard"> <img
+                class="freeDownloadListingImg" src="images/freedownloads_graphics/happySukkotCard.png"
+                alt="Happy Sukkot Card Printable.">
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Great Commission Bible Memory Chart and Cards" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/greatCommissionCard.png"
-            alt="Happy Sukkot Card Printable."> 
-
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
           </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Great Commission Bible Memory Chart<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
+          <span class="freeDownloadListingText">
+            <br>
+            Sukkot/Feast of Tabernacles Printables<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
           </span></a>
-</div>
+        </div>
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Bible Memory Chart" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/memoryChartFloral.jpg"
-            alt="Bible Memory Chart."> 
-
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
-          </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Bible Memory Chart - Floral<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
-          </span></a>
-</div>
+      </div>
+    </div>
+  </main>
 
 
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Bible Memory Chart" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/memoryChartGray.jpg"
-            alt="Bible Memory Chart."> 
+  <footer>
+    © 2024 by Lamp and Light Living | thatitmaygowell.com
+  </footer>
 
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
-          </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Bible Memory Chart - Black & White<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
-          </span></a>
-</div>
+</body>
 
-
-<div class="freeDownloadListing">
-    <div class="container">
-    <a title="Bible Memory Chart" href="templateBibleStudiesDetailed.html" target="_blank"> <img class="freeDownloadListingImg" 
-            src="images/freedownloads_graphics/memoryChartLeaves.jpg"
-            alt="Bible Memory Chart."> 
-
-            <div class="bottomText"><img src ="feather/download.svg" class="downloadSVG" alt="Download SVG"/> <br>
-            </div>
-          </div>
-            <span class="freeDownloadListingText">
-              <br>
-              Bible Memory Chart - Leaves<br>
-              <span class ="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src ="feather/download.svg" alt="Download SVG"/> <br>
-              <br>   
-          </span></a>
-</div>
-
-
-
-
-
-
-
-
-</div>
-
-
-    </div>  
-        </main>
-
-
-        <footer>
-            © 2024 by Lamp and Light Living | thatitmaygowell.com
-        </footer>
-
-
-
-	<script src="index.js"></script>
-  </body>
 </html>
