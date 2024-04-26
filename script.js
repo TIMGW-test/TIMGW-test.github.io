@@ -60,21 +60,16 @@ function closePopUp(){
 //   dropdownContent.style.display = "none";
 // });
 
-function toggleCaret() {
+function toggleCaret(dropdownId) {
   // Check if the screen width is below 768px (indicating mobile)
   if (window.innerWidth < 768) {
-    const carets = document.querySelectorAll('.fa-solid.fa-chevron-down');
-    const dropdownContents = document.querySelectorAll('.dropdown-content');
+    const caret = document.querySelector(`#${dropdownId} + .dropdownContainer .fa-solid.fa-chevron-down`);
+    const dropdownContent = document.querySelector(`#${dropdownId}.dropdown-content`);
 
-    for (let i = 0; i < carets.length; i++) {
-      const caret = carets[i];
-      const dropdownContent = dropdownContents[i];
-
-      if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
-        dropdownContent.style.display = "block"; 
-      } else {
-        dropdownContent.style.display = "none"; 
-      }
+    if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+      dropdownContent.style.display = "block"; 
+    } else {
+      dropdownContent.style.display = "none"; 
     }
     console.log("am I called?");
   }
