@@ -12,6 +12,12 @@ body {
 
 
 
+
+.blackDivider {
+  background-color: black;
+}
+
+
 /*####################################
 ############## HEADER ##############
 ######################################*/
@@ -27,7 +33,6 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 
 
 
@@ -426,9 +431,6 @@ body {
 /***************************** MOBILE Navbar *******************************/
 @media only screen and (max-width: 768px) {
 
-
-
-
     .navIconOpen, .navIconClose{
       display: block;
       text-decoration: none;
@@ -660,39 +662,15 @@ footer {
 
 
 /* CONTACT */
-.contactHeader {
-  font-weight: normal;
-  text-align: center;
-  /*background-color: rgba(208, 208, 217, 0.9); */
-  padding-top: 55px;
-  padding-bottom: 55px;
-  font-family: 'Georgia', serif;
-  margin-bottom: 0;
-  color: white;
 
-
-}
 
 #linkFAQ {
 
-  color: white;
+  color: black;
 }
 
-.contactMemoText {
-  font-weight: normal;
-  text-align: center;
-  width: 50%;
-  padding-left: 25%;
-  color: white;
-}
 
-.contactImgDiv {
-  background-image: url('images/contactHeaderImg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3);
-}
+
 
 .contactDiv {
   text-align: center;
@@ -746,7 +724,8 @@ footer {
 
 .bibleStudyHeader,
 .freeDownloadsHeader,
-.FAQHeader {
+.FAQHeader,
+.contactHeader {
   text-align: center;
   font-family: 'Geneva', sans-serif;
   font-weight: normal;
@@ -758,7 +737,8 @@ footer {
 
 .bibleStudySubHeader,
 .freeDownloadsSubHeader,
-.FAQSubHeader {
+.FAQSubHeader,
+.contactHeaderSubText {
   text-align: center;
   font-family: 'Geneva', sans-serif;
   font-weight: lighter;
@@ -944,13 +924,17 @@ footer {
 .blackDividerAbout {
   background-color: black;
   width: 100%;
-  display: flex;
+  display: inline-block;
   padding-top: 10px;
 }
 
 .aboutImgDiv {
-  width: 50%;
-  margin-left: 4%;
+  width: 5%;
+  float: left;
+  margin:0px;
+  margin-left: 25px;
+  padding:0px;
+
 }
 
 .aboutImg {
@@ -959,12 +943,15 @@ footer {
 }
 
 .aboutTextDiv {
-  width: 46%;
+  width: 48%;
   background-color: white;
   justify-content: center;
   display: flex;
-  margin-right: 4%;
+  margin:0px;
+  padding:0px;
+  margin-right: 30px;
   margin-bottom: 4px;
+  float: right;
 
 }
 
@@ -976,13 +963,39 @@ footer {
 }
 
 .aboutText {
-  width: 70%;
+  width: 71%;
   justify-content: center;
   padding-top: 10%;
   color: #6f6e6e;
   font-family: Didot, serif;
   font-size: 18px;
+  height: 793px;
 
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .blackDividerAbout{
+    display: block;
+    background-color: white;
+  
+  }
+
+  .aboutImgDiv {
+    width: 100%;
+    margin-left: 0;
+  }
+  .aboutImg{
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+  }
+
+  .aboutTextDiv {
+    width: 100%;
+}
 }
 
 
@@ -990,10 +1003,6 @@ footer {
 
 
 
-
-.blackDivider {
-  background-color: black;
-}
 
 
 
@@ -1184,11 +1193,22 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  box-shadow: 0 6px 10px 0 rgba(13, 13, 11, 0.4);
   text-align: center;
   z-index: 2;
 }
 
+.sib-form{
+  box-shadow: 0 6px 10px 0 rgba(13, 13, 11, 0.4);
+
+}
+
+.downloadBoxClose{
+  color: black;
+  text-decoration: none;
+  float: right;
+  margin: 25px;
+  font-size: 20px;
+}
 
 
 
@@ -1246,4 +1266,13 @@ margin-top: 30px;
   max-width: 50%;
   height: auto;
   
+}
+
+
+.noteOnCycles{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 70px;
+  color: #333;
 }

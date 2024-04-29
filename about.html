@@ -1,85 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamp and Light Living</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="script.js">
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="lineContainer">
-          <a class="link" href="index.html">Home</a>
-          <div class="dropdown">
-              <div class="dropdownContainer">
-            <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
-              </div>
-            <div class="dropdown-content" id="curriculumdropdown">
-              <a href="aboutcurriculum.html">About Curriculum</a>
-              <a href="cycle1.html">Cycle 1</a>
-              <a href="cycle2.html">Cycle 2</a>
-              <a href="cycle3.html">Cycle 3</a>
-              <a href="preschool.html">Preschool</a>
-              <a href="printedbooks.html">Printed Books for Purchase</a>
-              <a href="notebookingandextras.html">Notebooking and Extras</a>
-              <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp and Light Living</title>
+
+  <!-- Favicon links -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="lineContainer">
+        <a class="link" href="index.html">Home</a>
+        <div class="dropdown">
+          <div class="dropdownContainer">
+            <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down"
+              onclick="toggleCaret('curriculumdropdown')"></i>
           </div>
-  
-          <div class="dropdown">
-            <div class="dropdownContainer">
-          <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
+          <div class="dropdown-content" id="curriculumdropdown">
+            <a href="aboutcurriculum.html">About Curriculum</a>
+            <a href="cycle1.html">Cycle 1</a>
+            <a href="cycle2.html">Cycle 2</a>
+            <a href="cycle3.html">Cycle 3</a>
+            <a href="preschool.html">Preschool</a>
+            <a href="printedbooks.html">Printed Books for Purchase</a>
+            <a href="notebookingandextras.html">Notebooking and Extras</a>
+            <a href="freedownloadsforkids.html">Free Downloads for Kids</a>
+          </div>
         </div>
-            <div class="dropdown-content" id="biblestudydropdown">
-              <a href="freedownloads.html">Free Downloads</a>
-            </div>
+
+        <div class="dropdown">
+          <div class="dropdownContainer">
+            <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down"
+              onclick="toggleCaret('biblestudydropdown')"></i>
           </div>
-          <a class="link" href="about.html">About</a>
-          <a class="link" href="FAQ.html">FAQ</a>
-          <a class="link" href="contact.html">Contact</a>
-          <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
-  
+          <div class="dropdown-content" id="biblestudydropdown">
+            <a href="freedownloads.html">Free Downloads</a>
+          </div>
         </div>
-  
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="FAQ.html">FAQ</a>
+        <a class="link" href="contact.html">Contact</a>
+        <a id="loginNav" class="link" href="login.html" style="display: none;">Login</a>
+
       </div>
+
+    </div>
+
+    <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
+    <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
+
+    <div class="homepageLogoDiv">
+      <a href="index.html">
+        <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="blackDividerAbout">
+      <br>
   
-      <a href="javascript:void(0);" class="navIconOpen" onclick="toggleMenu()">&#9776;</a>
-      <a href="javascript:void(0);" class="navIconClose" onclick="toggleMenu()">&#x2715;</a>
-  
-      <div class="homepageLogoDiv">
-        <a href="index.html">
-          <img class="homepageLogo" src="images/lampAndLightLogo.png" alt="Lamp and Light Living Logo"> </a>
+      <div class="aboutTextDiv">
+        <div class="aboutText">
+          <h1 class="aboutHeaderText"> Hello </h1>
+          Thanks for stopping by. Lamp and Light exists to share God's Word and to see His Kingdom come and His will be
+          done. The heart behind the time invested in Lamp & Light Living is really about a lifestyle of living each day
+          with God in our hearts and His Word as our guide.
+          <br>
+          <br>
+          We are a homeschool family of six living in Alaska. We enjoy spending time in God's creation and Alaska has
+          been an amazing place for our family to enjoy it. Meghann is the creative content manager of Lamp and Light.
+          Developing homeschool curriculum, Bible studies, and creating beautiful handmade jewelry, are just a small
+          piece of her contribution to Lamp and Light. Chad is a former fishing guide and currently works in the oil
+          fields. He serves behind the scenes assisting with editing and content ideas. We are joined by our 4 children,
+          Angler, Rill, Hadassah, and Delta. Our main job is raising arrows for the Kingdom and sharing our ideas and
+          small parts of our lives with you!
+          <br>
+          <br>
+        </div>
       </div>
-    </header>
 
-        <main>
-          <div class="blackDividerAbout">
-            <br>
-            <div class="aboutImgDiv">
-            <img src="images/aboutImg.jpg" class="aboutImg" alt="Picture of the Lipse family."></div>
-            <div class="aboutTextDiv"> 
-              <div class="aboutText">
-                <h1 class="aboutHeaderText"> Hello </h1>
-                Thanks for stopping by. Lamp and Light exists to share God's Word and to see His Kingdom come and His will be done. The heart behind the time invested in Lamp & Light Living is really about a lifestyle of living each day with God in our hearts and His Word as our guide.
-                <br>
-                <br>
-              We are a homeschool family of six living in Alaska.  We enjoy spending time in God's creation and Alaska has been an amazing place for our family to enjoy it.  Meghann is the creative content manager of Lamp and Light.  Developing homeschool curriculum, Bible studies, and creating beautiful handmade jewelry, are just a small piece of her contribution to Lamp and Light.  Chad is a former fishing guide and currently works in the oil fields.  He serves behind the scenes assisting with editing and content ideas.  We are joined by our 4 children, Angler, Rill, Hadassah, and Delta.  Our main job is raising arrows for the Kingdom and sharing our ideas and small parts of our lives with you!
-              <br>
-              <br>
-            </div>
-          </div>
-         
-          </div>
-        </main>
+      <div class="aboutImgDiv">
+        <img src="images/aboutImg.jpg" class="aboutImg" alt="Picture of the Lipse family.">
+      </div>
+
+    </div>
+  </main>
 
 
-        <footer>
-            © 2024 by Lamp and Light Living
-        </footer>
+  <footer>
+    © 2024 by Lamp and Light Living
+  </footer>
 
 
 
-  </body>
+</body>
+
 </html>
