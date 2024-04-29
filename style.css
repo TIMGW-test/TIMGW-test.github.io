@@ -779,7 +779,6 @@ footer {
 }
 
 
-
 .studyListing,
 .freeDownloadListing {
   margin: 10px;
@@ -1081,7 +1080,6 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 0;
-  margin-top: 0;
 
 }
 
@@ -1092,6 +1090,7 @@ footer {
   height: 230px;
   transition: transform 1s, filter 0.7s;
 }
+
 
 
 .cycleContainer:hover {
@@ -1107,19 +1106,54 @@ footer {
   justify-content: center;
 }
 
-/** Commenting out for now, this is the download icon that goes at the bottom of the picture hen hovered */
-/*.cycleContainer:hover .bottomText {
-  display: block;
-  width: 10px;
-  height: 10px;
-} */
-
 .cycle1TeacherGuideDetailed {
   width: 595px;
   height: 595px;
 
 
 }
+
+.cycleContainer {
+  position: relative;
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  transition: transform 1s, filter 0.7s;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .cycleDiv{
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .cycleListing {
+    width: 140px;
+
+  }
+
+  .cycleListingImg {
+    width: 140px;
+    height: 140px;
+  }
+  .cycleContainer{
+    width: 140px;
+    height: 140px;
+  }
+
+  .cycleListingText {
+    width: 150px;
+  
+  }
+
+  .cycleDivContainer{
+    display: inline-block;
+  }
+  
+}
+
 
 
 
