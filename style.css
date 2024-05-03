@@ -155,7 +155,8 @@ body {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade {
@@ -232,88 +233,6 @@ body {
   color: white;
 }
 
-/***************************** MOBILE Homepage *******************************/
-@media only screen and (max-width: 768px) {
-
-  .homepageLogo {
-    width: 40%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-  }
-
-  /* Homepage caption text */
-  .homepageCaptionText {
-    font-size: 25px; 
-    top: 20px; 
-    left: 20px; 
-  }
-
-  #homepageBackgroundRiver,
-  #deskImg,
-  #girlImg {
-    height: 300px; 
-    object-fit: cover; 
-  }
-
-  #riverCaptionText{
-    top:80px;
-    left:50px;
-  } 
-
-  /* Homepage caption button */
-  .homepageCaptionBtn {
-    padding: 4px 6px; 
-    width: 110px; 
-  }
-
-  /* Homepage button container */
-  .homepageButtonContainer {
-    padding-bottom: 20px; 
-    padding-top: 20px;
-  }
-
-  /* Homepage download button */
-  .homepageDownloadButton {
-    padding: 8px 45px; 
-  }
-
-
-/* Text styling for specific H classes */
-#downloadHomepageStudies h1,
-#downloadHomepageHomeschool h1 {
-  font-size: 22px;
-}
-
-/* The button for downloads at the buttom of the homepage */
-.homepageDownloadButton {
-  border: solid 2px #333;
-  padding: 10px 70px;
-}
-
-#downloadHomepageStudies h3,
-#downloadHomepageHomeschool h3 {
-  display: none;
-}
-
-.homepageButtonContainer {
-  width: 100%;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#downloadHomepageHomeschool {
-  width: 100%;
-  text-align: center;
-}
-
-#downloadHomepageStudies {
-  width: 100%;
-  text-align: center;
-}
-
-
-}
 
 
 
@@ -964,46 +883,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 768px) {
 
-  .blackDividerAbout{
-    display: block;
-    background-color: white;
-  
-  }
-
-  .aboutImgDiv {
-    width: 100%;
-    margin-left: 0;
-    position: relative;
-    bottom: -925px;
-
-  }
-  .aboutImg{
-    width: 100%;
-    height: auto;
-    margin: auto;
-
-  }
-
-  .aboutTextDiv {
-    width: 100%;
-    position: relative;
-    top: -480px;
-
-}
-
-.aboutText {
-  width: 90%;
-  line-height: 30px;
-
-}
-
-.cycleLogoHeader {
-  width: 45%;
-}
-
-}
 
 
 
@@ -1127,39 +1007,6 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
-  .cycleDiv{
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-  }
-  
-  .cycleListing {
-    width: 140px;
-
-  }
-
-  .cycleListingImg {
-    width: 140px;
-    height: 140px;
-  }
-  .cycleContainer{
-    width: 140px;
-    height: 140px;
-  }
-
-  .cycleListingText {
-    width: 150px;
-  
-  }
-
-  .cycleDivContainer{
-    display: inline-block;
-  }
-  
-}
-
-
 
 
 
@@ -1199,6 +1046,8 @@ footer {
   font-family: 'Geneva', sans-serif;
   color: #333;
 }
+
+
 
 #studyDownloadButton {
   background-color: #333;
@@ -1251,6 +1100,7 @@ footer {
   margin: 25px;
   font-size: 20px;
 }
+
 
 
 
@@ -1317,4 +1167,201 @@ margin-top: 30px;
   font-size: 18px;
   margin-bottom: 70px;
   color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .cycleDiv{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.cycleListing {
+  width: 140px;
+
+}
+
+.cycleListingImg {
+  width: 140px;
+  height: 140px;
+}
+.cycleContainer{
+  width: 140px;
+  height: 140px;
+}
+
+.cycleListingText {
+  width: 150px;
+
+}
+
+.cycleDivContainer{
+  display: inline-block;
+}
+
+.blackDividerAbout{
+  display: block;
+  background-color: white;
+
+}
+
+.aboutImgDiv {
+  width: 100%;
+  margin-left: 0;
+  position: relative;
+  bottom: -925px;
+
+}
+.aboutImg{
+  width: 100%;
+  height: auto;
+  margin: auto;
+
+}
+
+.aboutTextDiv {
+  width: 100%;
+  position: relative;
+  top: -480px;
+
+}
+
+.aboutText {
+width: 90%;
+line-height: 30px;
+
+}
+
+.cycleLogoHeader {
+width: 45%;
+}
+  
+#studyImage, #downloadImage, #curriculumImage {
+  width: 350px;
+  height: 350px;
+}
+
+#detailedStudyContainer {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+#detailedStudyImgContainer {
+  text-align: center;
+  width: 100%;
+  padding-left: 0px;
+}
+
+#detailedStudyTextContainer{
+  text-align: center;
+  width: 100%;
+}
+
+#studyDescription, #downloadDescription, #curriculumDescription {
+  text-align: left;
+  padding-left: 25px;
+}
+
+/***************************** MOBILE Homepage *******************************/
+  .homepageLogo {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  /* Homepage caption text */
+  .homepageCaptionText {
+    font-size: 25px; 
+    top: 20px; 
+    left: 20px; 
+  }
+
+  #homepageBackgroundRiver,
+  #deskImg,
+  #girlImg {
+    height: 300px; 
+    object-fit: cover; 
+  }
+
+  #riverCaptionText{
+    top:80px;
+    left:50px;
+  } 
+
+  /* Homepage caption button */
+  .homepageCaptionBtn {
+    padding: 4px 6px; 
+    width: 110px; 
+  }
+
+  /* Homepage button container */
+  .homepageButtonContainer {
+    padding-bottom: 20px; 
+    padding-top: 20px;
+  }
+
+  /* Homepage download button */
+  .homepageDownloadButton {
+    padding: 8px 45px; 
+  }
+
+
+/* Text styling for specific H classes */
+#downloadHomepageStudies h1,
+#downloadHomepageHomeschool h1 {
+  font-size: 22px;
+}
+
+/* The button for downloads at the buttom of the homepage */
+.homepageDownloadButton {
+  border: solid 2px #333;
+  padding: 10px 70px;
+}
+
+#downloadHomepageStudies h3,
+#downloadHomepageHomeschool h3 {
+  display: none;
+}
+
+.homepageButtonContainer {
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#downloadHomepageHomeschool {
+  width: 100%;
+  text-align: center;
+}
+
+#downloadHomepageStudies {
+  width: 100%;
+  text-align: center;
+}
+
+.studyListing, .freeDownloadListing{
+  width: 150px;
+    height: 150px;
+  }
+
+  .studyListingImg, .freeDownloadListingImg{
+    width: 150px;
+    height: 150px;
+  }
+
+  .container{
+    width: 150px;
+    height: 150px;
+  }
+  .freeBibleStudiesDiv, .curriculumDiv, .cycleDiv {
+    width: 100%;
+  }
+  .studyListing, .freeDownloadListing {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 15px;
+  }
 }
