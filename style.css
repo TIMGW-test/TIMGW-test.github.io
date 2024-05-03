@@ -1,9 +1,9 @@
-
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
   overflow-x: hidden;
 }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -97,16 +97,16 @@ body {
   animation: fadeInRight 1.5s forwards;
 }
 
-#girlImgCaptionText{
-  top: 150px; 
-  left: 80px; 
+#girlImgCaptionText {
+  top: 150px;
+  left: 80px;
   color: white;
 }
 
-#riverCaptionText{
-  top: 300px; 
-  left: 250px; 
-  color: white; 
+#riverCaptionText {
+  top: 300px;
+  left: 250px;
+  color: white;
   font-family: 'Geneva', sans-serif;
 }
 
@@ -134,6 +134,7 @@ body {
     opacity: 0;
     transform: translateX(100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -279,12 +280,13 @@ body {
 
 /* Hide the link that should open and close the topnav on small screens */
 
-.navIconOpen, .navIconClose{
+.navIconOpen,
+.navIconClose {
   display: none;
 }
 
 .fa-solid.fa-chevron-down {
-    display: none;
+  display: none;
 }
 
 
@@ -350,30 +352,31 @@ body {
 /***************************** MOBILE Navbar *******************************/
 @media only screen and (max-width: 768px) {
 
-    .navIconOpen, .navIconClose{
-      display: block;
-      text-decoration: none;
-      color:black;
-      float: right;
-      font-size: 35px;
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      z-index: 13;
-    }
+  .navIconOpen,
+  .navIconClose {
+    display: block;
+    text-decoration: none;
+    color: black;
+    float: right;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 13;
+  }
 
-    .navIconClose{
-      display:none;
-    }
+  .navIconClose {
+    display: none;
+  }
 
-  .navbar{
+  .navbar {
     display: none;
     background-color: #FFFFFF;
     color: black;
     height: 100%;
     width: 100%;
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     z-index: 12;
     overflow: hidden;
     padding-left: 0px;
@@ -382,15 +385,15 @@ body {
 
 
   .navbar a {
-  display: block;
-  float: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-  margin: 0;
-  padding-top: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    float: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   }
 
@@ -399,21 +402,21 @@ body {
   }
 
   .fa-solid.fa-chevron-down {
-  margin-left: 10px;
+    margin-left: 10px;
   }
 
 
-  .dropdownContainer{
+  .dropdownContainer {
     display: flex;
     text-align: center;
-    align-items: baseline;    
+    align-items: baseline;
     justify-content: center;
 
   }
 
 
   .navbar .lineContainer {
-    border: none; 
+    border: none;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -423,7 +426,7 @@ body {
     margin-top: 80px;
   }
 
- .lineContainer .dropdown{
+  .lineContainer .dropdown {
     text-align: center;
 
   }
@@ -438,11 +441,11 @@ body {
   }
 
   .fa-solid.fa-chevron-down {
-      display: inline-block;
- }
+    display: inline-block;
+  }
 
 
- 
+
 
   .dropdown-content {
     display: none;
@@ -453,6 +456,7 @@ body {
     margin: 0px;
     margin: 0px;
   }
+
   .dropdown-content a {
     float: none;
     color: #6f6e6e;
@@ -464,8 +468,8 @@ body {
     margin: 0;
   }
 
-  
-  
+
+
 }
 
 
@@ -481,6 +485,7 @@ body {
   text-align: center;
   font-weight: normal;
 }
+
 /* might not need **/
 .homepageIntro {
   text-align: center;
@@ -527,9 +532,11 @@ footer {
   height: 285px;
 }
 
+/* Download icon that hovers over picture on listings */
 .downloadSVG {
   width: 55px;
   height: 55px;
+  display: none;
 }
 
 .bottomText {
@@ -545,8 +552,8 @@ footer {
 }
 
 .freeDownloadIcon {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 .studyListingImg,
@@ -586,6 +593,23 @@ footer {
 #linkFAQ {
 
   color: black;
+}
+
+.faqButton {
+  text-align: center;
+  background-color: white;
+  border: 2px solid #333;
+  background-color: white;
+  padding: 8px 35px;
+  margin-top: 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+
+}
+
+.faqButton:hover {
+  background-color: #333;
+  color: white;
 }
 
 
@@ -741,8 +765,17 @@ footer {
 }
 
 .curriculumLogoHeader {
-  width: 22%;
+  float: left;
   margin-left: 20%;
+  width: 20%;
+}
+
+
+#curriculumVideoContainer {
+  text-align: center;
+  margin-right: 15%;
+
+
 
 }
 
@@ -1028,7 +1061,9 @@ footer {
 
 }
 
-#studyImage, #downloadImage, #curriculumImage {
+#studyImage,
+#downloadImage,
+#curriculumImage {
   width: 600px;
   height: 600px;
 }
@@ -1041,7 +1076,9 @@ footer {
 
 }
 
-#studyTitle, #downloadTitle, #curriculumTitle{
+#studyTitle,
+#downloadTitle,
+#curriculumTitle {
   font-size: 40px;
   font-family: 'Geneva', sans-serif;
   color: #333;
@@ -1067,19 +1104,22 @@ footer {
 }
 
 
-#studyDescription, #downloadDescription, #curriculumDescription {
+#studyDescription,
+#downloadDescription,
+#curriculumDescription {
   padding-top: 20px;
   font-size: 14px;
   font-family: 'Geneva', sans-serif;
   color: #333;
 
 }
+
 #popUpDownloadDiv {
   backdrop-filter: blur(7px);
   display: none;
   width: 800px;
   height: 400px;
-  position: fixed; 
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1088,17 +1128,26 @@ footer {
   z-index: 2;
 }
 
-.sib-form{
+.sib-form {
   box-shadow: 0 6px 10px 0 rgba(13, 13, 11, 0.4);
 
 }
 
-.downloadBoxClose{
+.downloadBoxClose {
   color: black;
   text-decoration: none;
   float: right;
   margin: 25px;
   font-size: 20px;
+}
+
+
+/* THANK YOU PAGE MESSAGE*/
+.thankYouMessage {
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  font-size: 25px;
+  color: #0E1638;
+  text-align: center;
 }
 
 
@@ -1116,27 +1165,28 @@ footer {
   background-color: #333;
   border-radius: 3px;
   border-width: 0px;
-  padding: 10px 20px; /* Adjust button padding as needed */
+  padding: 10px 20px;
+  /* Adjust button padding as needed */
   cursor: pointer;
 }
 
-.declineBtn{
+.declineBtn {
   display: block;
   font-size: 12px;
   background-color: #FFFFFF;
-  color: #333!important;
+  color: #333 !important;
   border: none;
   text-decoration: underline;
   font-family: Helvetica, sans-serif;
   margin-top: 10px;
   width: fit-content;
-  margin: 10px auto;  
+  margin: 10px auto;
   cursor: pointer;
 
 }
 
 
-#aboutCurriculumOpeningText{
+#aboutCurriculumOpeningText {
   text-align: center;
   margin-top: 30px;
   color: #333;
@@ -1144,26 +1194,28 @@ footer {
   font-size: 20px;
 }
 
-#aboutCurriculumVideoContainer{
-text-align: center;
-margin-top: 30px;
+#aboutCurriculumVideoContainer {
+  text-align: center;
+  margin-top: 30px;
 }
+
 
 #aboutCurriculumInfoSheetContainer {
   text-align: center;
   margin-top: 30px;
 
 }
+
 #curriculumInfoSheet {
   max-width: 50%;
   height: auto;
-  
+
 }
 
 
-.noteOnCycles{
+.noteOnCycles {
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 18px;
   margin-bottom: 70px;
   color: #333;
@@ -1171,235 +1223,277 @@ margin-top: 30px;
 
 @media only screen and (max-width: 768px) {
 
-  .cycleDiv{
+  .cycleDiv {
     display: inline-block;
     width: 100%;
     text-align: center;
-}
+  }
 
-.cycleListing {
-  width: 140px;
+  .cycleListing {
+    width: 140px;
 
-}
+  }
 
-.cycleListingImg {
-  width: 140px;
-  height: 140px;
-}
-.cycleContainer{
-  width: 140px;
-  height: 140px;
-}
+  .cycleListingImg {
+    width: 140px;
+    height: 140px;
+  }
 
-.cycleListingText {
-  width: 150px;
+  .cycleContainer {
+    width: 140px;
+    height: 140px;
+  }
 
-}
+  .cycleListingText {
+    width: 150px;
 
-.cycleDivContainer{
-  display: inline-block;
-}
+  }
 
-.blackDividerAbout{
-  display: block;
-  background-color: white;
+  .cycleDivContainer {
+    display: inline-block;
+  }
 
-}
+  .blackDividerAbout {
+    display: block;
+    background-color: white;
 
-.aboutImgDiv {
-  width: 100%;
-  margin-left: 0;
-  position: relative;
-  bottom: -925px;
+  }
 
-}
-.aboutImg{
-  width: 100%;
-  height: auto;
-  margin: auto;
+  .aboutImgDiv {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    bottom: -925px;
 
-}
+  }
 
-.aboutTextDiv {
-  width: 100%;
-  position: relative;
-  top: -480px;
+  .aboutImg {
+    width: 100%;
+    height: auto;
+    margin: auto;
 
-}
+  }
 
-.aboutText {
-width: 90%;
-line-height: 30px;
+  .aboutTextDiv {
+    width: 100%;
+    position: relative;
+    top: -480px;
 
-}
+  }
 
-.cycleLogoHeader {
-width: 45%;
-}
-  
-#studyImage, #downloadImage, #curriculumImage {
-  width: 350px;
-  height: 350px;
-}
+  .aboutText {
+    width: 90%;
+    line-height: 30px;
 
-#detailedStudyContainer {
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-}
+  }
 
-#detailedStudyImgContainer {
-  text-align: center;
-  width: 100%;
-  padding-left: 0px;
-}
+  .cycleLogoHeader {
+    width: 45%;
+  }
 
-#detailedStudyTextContainer{
-  text-align: center;
-  width: 100%;
-}
+  #studyImage,
+  #downloadImage,
+  #curriculumImage {
+    width: 350px;
+    height: 350px;
+  }
 
-#studyDescription, #downloadDescription, #curriculumDescription {
-  text-align: left;
-  padding-left: 25px;
-}
+  #detailedStudyContainer {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
 
-/***************************** MOBILE Homepage *******************************/
+  #detailedStudyImgContainer {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  #detailedStudyTextContainer {
+    text-align: center;
+    width: 100%;
+  }
+
+  #studyDescription,
+  #downloadDescription,
+  #curriculumDescription {
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  /***************************** MOBILE Homepage *******************************/
   .homepageLogo {
     width: 40%;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
   }
 
   /* Homepage caption text */
   .homepageCaptionText {
-    font-size: 25px; 
-    top: 20px; 
-    left: 20px; 
+    font-size: 25px;
+    top: 20px;
+    left: 20px;
   }
 
   #homepageBackgroundRiver,
   #deskImg,
   #girlImg {
-    height: 300px; 
-    object-fit: cover; 
+    height: 300px;
+    object-fit: cover;
   }
 
-  #riverCaptionText{
-    top:80px;
-    left:50px;
-  } 
+  #riverCaptionText {
+    top: 80px;
+    left: 50px;
+  }
 
   /* Homepage caption button */
   .homepageCaptionBtn {
-    padding: 4px 6px; 
-    width: 110px; 
+    padding: 4px 6px;
+    width: 110px;
   }
 
   /* Homepage button container */
   .homepageButtonContainer {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     padding-top: 20px;
   }
 
   /* Homepage download button */
   .homepageDownloadButton {
-    padding: 8px 45px; 
+    padding: 8px 45px;
   }
 
 
-/* Text styling for specific H classes */
-#downloadHomepageStudies h1,
-#downloadHomepageHomeschool h1 {
-  font-size: 22px;
-}
-
-/* The button for downloads at the buttom of the homepage */
-.homepageDownloadButton {
-  border: solid 2px #333;
-  padding: 10px 70px;
-}
-
-#downloadHomepageStudies h3,
-#downloadHomepageHomeschool h3 {
-  display: none;
-}
-
-.homepageButtonContainer {
-  width: 100%;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#downloadHomepageHomeschool {
-  width: 100%;
-  text-align: center;
-}
-
-#downloadHomepageStudies {
-  width: 100%;
-  text-align: center;
-}
-
-.studyListing, .freeDownloadListing{
-  width: 150px;
-    height: 150px;
+  /* Text styling for specific H classes */
+  #downloadHomepageStudies h1,
+  #downloadHomepageHomeschool h1 {
+    font-size: 22px;
   }
 
-  .studyListingImg, .freeDownloadListingImg{
+  /* The button for downloads at the buttom of the homepage */
+  .homepageDownloadButton {
+    border: solid 2px #333;
+    padding: 10px 70px;
+  }
+
+  #downloadHomepageStudies h3,
+  #downloadHomepageHomeschool h3 {
+    display: none;
+  }
+
+  .homepageButtonContainer {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  #downloadHomepageHomeschool {
+    width: 100%;
+    text-align: center;
+  }
+
+  #downloadHomepageStudies {
+    width: 100%;
+    text-align: center;
+  }
+
+  .studyListing,
+  .freeDownloadListing {
     width: 150px;
     height: 150px;
   }
 
-  .container{
+  .studyListingImg,
+  .freeDownloadListingImg {
     width: 150px;
     height: 150px;
   }
-  .freeBibleStudiesDiv, .curriculumDiv, .cycleDiv {
+
+  .container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .freeBibleStudiesDiv,
+  .curriculumDiv,
+  .cycleDiv {
     width: 100%;
   }
-  .studyListing, .freeDownloadListing {
+
+  .studyListing,
+  .freeDownloadListing {
     padding-bottom: 30px;
     padding-top: 30px;
     margin: 15px;
   }
 
-.bibleStudyHeader,
-.freeDownloadsHeader,
-.FAQHeader,
-.contactHeader {
-  font-size: 50px;
-}
-.freeBibleStudiesDivContainer, .curriculumDivContainer, .freeDownloadsDivContainer, .cycleDivContainer {
-  margin-bottom: 80px;
-}
+  .bibleStudyHeader,
+  .freeDownloadsHeader,
+  .FAQHeader,
+  .contactHeader {
+    font-size: 50px;
+  }
+
+  .freeBibleStudiesDivContainer,
+  .curriculumDivContainer,
+  .freeDownloadsDivContainer,
+  .cycleDivContainer {
+    margin-bottom: 80px;
+  }
 
 
-.contactSubmitButton {
-  width: 92%;
-}
+  .contactSubmitButton {
+    width: 92%;
+  }
 
 
-.contactDiv {
-  text-align: center;
-  width: 80%; 
-  margin: auto;
-  border-width: 7px;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  margin-bottom: 2%;
-}
+  .contactDiv {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-width: 7px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+  }
 
-.contactInput,
-.contactInputMessage {
-  width: 80%; /* Make the input fields take up 80% of the width */
-  border: none;
-  background-color: inherit;
-  padding: 10px;
-  margin: 10px auto; /* Center the inputs horizontally */
-  font-family: 'Verdana', 'Andale Mono', monospace;
-  border: 2px solid black;
-  transition: border 0.3s ease-out;
-}
+  .contactInput,
+  .contactInputMessage {
+    width: 80%;
+    /* Make the input fields take up 80% of the width */
+    border: none;
+    background-color: inherit;
+    padding: 10px;
+    margin: 10px auto;
+    /* Center the inputs horizontally */
+    font-family: 'Verdana', 'Andale Mono', monospace;
+    border: 2px solid black;
+    transition: border 0.3s ease-out;
+  }
+
+  .thankYouMessage {
+    margin-top: 45%
+  }
+
+  #aboutCurriculumVideoContainer {
+    margin-top: 15px; /* Adjust margin-top for better spacing */
+  }
+  video {
+    max-width: 100%; /* Make the video responsive */
+    height: auto; /* Let the height adjust according to the width */
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the video horizontally */
+  }
+
+  #aboutCurriculumOpeningText {
+    font-size: 12px;
+  }
+
+  #curriculumInfoSheet {
+    max-width: 70%;
+  }
+
 }
