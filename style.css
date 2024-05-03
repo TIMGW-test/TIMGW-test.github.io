@@ -1374,4 +1374,32 @@ width: 45%;
 .freeBibleStudiesDivContainer, .curriculumDivContainer, .freeDownloadsDivContainer, .cycleDivContainer {
   margin-bottom: 80px;
 }
+
+
+.contactSubmitButton {
+  width: 92%;
+}
+
+
+.contactDiv {
+  text-align: center;
+  width: 80%; 
+  margin: auto;
+  border-width: 7px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-bottom: 2%;
+}
+
+.contactInput,
+.contactInputMessage {
+  width: 80%; /* Make the input fields take up 80% of the width */
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  margin: 10px auto; /* Center the inputs horizontally */
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  border: 2px solid black;
+  transition: border 0.3s ease-out;
+}
 }
