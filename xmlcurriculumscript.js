@@ -10,7 +10,7 @@ window.onload = function () {
         const xmlDocument = new DOMParser().parseFromString(xmlString, "text/xml");
         console.log("xmlDocument:", xmlDocument);
 
-        const curriculumcycles = xmlDocument.querySelectorAll('curriculum');
+        const curriculumcycles = xmlDocument.querySelectorAll('curriculumListing');
         let foundCurriculum = null;
 
         curriculumcycles.forEach(curriculum => {

@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lamp and Light Living</title>
+
+  <!-- Favicon links -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,9 +22,10 @@
       <div class="lineContainer">
         <a class="link" href="index.html">Home</a>
         <div class="dropdown">
-            <div class="dropdownContainer">
-          <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('curriculumdropdown')"></i>
-            </div>
+          <div class="dropdownContainer">
+            <a class="link" href="curriculum.html">Homeschool Curriculum</a><i class="fa-solid fa-chevron-down"
+              onclick="toggleCaret('curriculumdropdown')"></i>
+          </div>
           <div class="dropdown-content" id="curriculumdropdown">
             <a href="aboutcurriculum.html">About Curriculum</a>
             <a href="cycle1.html">Cycle 1</a>
@@ -31,8 +40,9 @@
 
         <div class="dropdown">
           <div class="dropdownContainer">
-        <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down" onclick="toggleCaret('biblestudydropdown')"></i>
-      </div>
+            <a class="link" href="biblestudies.html">Bible Studies</a><i class="fa-solid fa-chevron-down"
+              onclick="toggleCaret('biblestudydropdown')"></i>
+          </div>
           <div class="dropdown-content" id="biblestudydropdown">
             <a href="freedownloads.html">Free Downloads</a>
           </div>
@@ -71,10 +81,9 @@
 
         <div class="cycleListing">
           <div class="cycleContainer">
-            <a title="Homeschool Notebooking" href="templateCurriculumListings.html"> <img class="cycleListingImg"
-              src="images/curriculum_graphics/notebooking.png"
-              alt="An image of the Homeschool Notebooking cover.">
-            
+            <a title="Homeschool Notebooking" href="downloadlisting.html?freedownload=homeschoolnotebooking"> <img class="cycleListingImg"
+                src="images/curriculum_graphics/notebooking.png" alt="An image of the Homeschool Notebooking cover.">
+
               <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
               </div>
           </div>
@@ -89,59 +98,77 @@
 
 
         <div class="cycleListing">
-            <div class="cycleContainer">
-              <a title="Preschool Alphabet Flash Cards" href="templateCurriculumListings.html"> <img class="cycleListingImg"
-                src="images/curriculum_graphics/preschoolAlphabetCards.png"
+          <div class="cycleContainer">
+            <a title="Preschool Alphabet Flash Cards" href="downloadlisting.html?freedownload=preschoolcards2"> <img
+                class="cycleListingImg" src="images/curriculum_graphics/preschoolAlphabetCards.png"
                 alt="An image of the Preschool Alphabet Flash Cards.">
-              
-                <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
-                </div>
-            </div>
-            <span class="cycleListingText">
-              <br>
-              Preschool Alphabet Flash Cards<br>
-              <span class="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
-              <br>
-            </span></a>
-          </div>
 
-          <div class="cycleListing">
-            <div class="cycleContainer">
-              <a title="Kindergarten Sight Words and Alaphabet Flash Cards" href="templateCurriculumListings.html"> <img class="cycleListingImg"
-                src="images/curriculum_graphics/kindergartenSightWordsAlphabetCards.png"
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
+          </div>
+          <span class="cycleListingText">
+            <br>
+            Preschool Alphabet Flash Cards<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
+          </span></a>
+        </div>
+
+        <div class="cycleListing">
+          <div class="cycleContainer">
+            <a title="Kindergarten Sight Words and Alaphabet Flash Cards" href="downloadlisting.html?freedownload=kindergartensightandalphabetcards"> <img
+                class="cycleListingImg" src="images/curriculum_graphics/kindergartenSightWordsAlphabetCards.png"
                 alt="An image of the Kindergarten Sight Words and Alaphabet Flash Cards.">
-              
-                <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
-                </div>
-            </div>
-            <span class="cycleListingText">
-              <br>
-              Kindergarten Sight Words and <br>
-               Alaphabet Flash Cards <br>
-              <span class="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
-              <br>
-            </span></a>
-          </div>
 
-          <div class="cycleListing">
-            <div class="cycleContainer">
-              <a title="First Grade Sight Word Flash Cards" href="templateCurriculumListings.html"> <img class="cycleListingImg"
-                src="images/curriculum_graphics/firstGradeSightWordCards.png"
-                alt="An image of the First Grade Sight Word Flash Cards.">
-              
-                <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
-                </div>
-            </div>
-            <span class="cycleListingText">
-              <br>
-              First Grade Sight Word <br>Flash Cards <br>
-              <span class="freeDownloadText">Free Download <br> </span>
-              <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
-              <br>
-            </span></a>
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
           </div>
+          <span class="cycleListingText">
+            <br>
+            Kindergarten Sight Words and <br>
+            Alaphabet Flash Cards <br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
+          </span></a>
+        </div>
+
+        <div class="cycleListing">
+          <div class="cycleContainer">
+            <a title="First Grade Sight Word Flash Cards" href="downloadlisting.html?freedownload=firstgradesightwordcards"> <img
+                class="cycleListingImg" src="images/curriculum_graphics/firstGradeSightWordCards.png"
+                alt="An image of the First Grade Sight Word Flash Cards.">
+
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
+          </div>
+          <span class="cycleListingText">
+            <br>
+            First Grade Sight Word <br>Flash Cards <br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
+          </span></a>
+        </div>
+
+        <div class="cycleListing">
+          <div class="cycleContainer">
+            <a title="First Grade Sight Word Flash Cards" href="downloadlisting.html?freedownload=firstgradesightwordcards"> <img
+                class="cycleListingImg" src="images/freekiddownloads_graphics/daysOfCreationSheet.png"
+                alt="An image of the First Grade Sight Word Flash Cards.">
+
+              <div class="bottomText"><img src="feather/download.svg" class="downloadSVG" alt="Download SVG" /> <br>
+              </div>
+          </div>
+          <span class="cycleListingText">
+            <br>
+            Armor of God, Fruits of the Spirit,<br> Days of Creation, Lord's Prayer<br>
+            <span class="freeDownloadText">Free Download <br> </span>
+            <img class="freeDownloadIcon" src="feather/download.svg" alt="Download SVG" /> <br>
+            <br>
+          </span></a>
+        </div>
 
   </main>
 
