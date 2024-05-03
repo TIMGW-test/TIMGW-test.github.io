@@ -25,6 +25,8 @@
         Say goodbye to living in fear!
     </description>
     <image>images/product_graphics/perfectlovecastsoutfear.png</image>
+    <pdf>assets/Perfect Love Casts Out Fear.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
@@ -34,15 +36,18 @@
         A Bible study on various women throughout the Bible + a thought-provoking look at the Biblical role of women.
     </description>
     <image>images/product_graphics/createduniquely.png</image>
+    <pdf>assets/Created Uniquely.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
-    <id></id>
+    <id>allcreation</id>
     <title>All Creation</title>
     <description>
         All of the earth declares God's praise, see God in Creation through this study.
     </description>
     <image>images/product_graphics/allcreation.png</image>
+    <pdf>assets/All Creation Bible Study.pdf</pdf> 
 </bibleStudy>
 
 <bibleStudy>
@@ -52,6 +57,8 @@
         A short study on the book of 1 John and John 15.
     </description>
     <image>images/product_graphics/fruitfulabiding.png</image>
+    <pdf>assets/Fruitful Abiding.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
@@ -61,6 +68,8 @@
         A mini Bible study to do with your children! Great for the week leading up to Thanksgiving.
     </description>
     <image>images/product_graphics/livingthankful.png</image>
+    <pdf>assets/Living Thankful in an Ungrateful World.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
@@ -70,6 +79,8 @@
         A study on the books of Genesis and Exodus.
     </description>
     <image>images/product_graphics/creatoranddeliverer.png</image>
+    <pdf>assets/Creator and Deliverer.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
@@ -79,6 +90,7 @@
         Study Leviticus, Numbers, and Deuteronomy.
     </description>
     <image>images/product_graphics/forgoodandblessing.png</image>
+    <pdf>assets/For Good and Blessing.pdf</pdf> 
 </bibleStudy>
 
 <bibleStudy>
@@ -105,6 +117,8 @@
         
     </description>
     <image>images/product_graphics/completebibleinayearfloral.png</image>
+    <pdf>assets/The Complete Bible in a Year Reading Plan  - Floral Design.pdf</pdf> 
+
 </bibleStudy>
 
 <bibleStudy>
@@ -131,6 +145,7 @@
         
     </description>
     <image>images/product_graphics/completebibleinayear.png</image>
+    <pdf>assets/The Complete Bible in a Year Reading Plan - Blue.pdf</pdf> 
 </bibleStudy>
 
 </bibleStudies>

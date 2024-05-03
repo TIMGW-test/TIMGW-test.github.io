@@ -1369,8 +1369,9 @@ width: 45%;
 .freeDownloadsHeader,
 .FAQHeader,
 .contactHeader {
-
   font-size: 50px;
-
+}
+.freeBibleStudiesDivContainer, .curriculumDivContainer, .freeDownloadsDivContainer, .cycleDivContainer {
+  margin-bottom: 80px;
 }
 }

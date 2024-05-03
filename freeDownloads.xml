@@ -1,99 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <freedownloads>
+
+    <!-- Free downloads -->
     <freedownload>
         <id>planner</id>
         <title>Planner</title>
-        <description> 
-            Download this free planner template! Print as many copies of the week pages as you want, this works great bound together with a spiral binder but can also be stapled or hole punched. 
+        <description>
+            Download this free planner template! Print as many copies of the week pages as you want,
+            this works great bound together with a spiral binder but can also be stapled or hole
+            punched.
 
-            The Lord establishes our plans and we will only do what we intend if He allows! 
-            
+            The Lord establishes our plans and we will only do what we intend if He allows!
+
             "In their hearts humans plan their course,
             but the Lord establishes their steps."
             Proverbs 16:9</description>
 
         <image>images/freedownloads_graphics/plannerFloral.png</image>
-        <pdf>assets/Planner.pdf</pdf> 
+        <pdf>assets/curriculum/Notebooking - That It May Go Well.pdf</pdf>
     </freedownload>
 
     <freedownload>
         <id>goodnewscards</id>
         <title>Share the Gospel! - Cards to Gift the Good News</title>
-        <description> 
+        <description>
             Do you have a passion for sahring about Jesus but you don't know where to start?
-            Download and print these cards. Put a simple coffee card inside and find someone to gift this to! Don't be afraid, simply ask, "Can I share the gospel with you?" Share as much as you want in that moment and gift them this card. We must work the harvest feilds, friend! Jesus said the harvest is plentiful. If we believe Him we simply must labor for this! There's no time to wait, no time to waste. Jesus specifically gave the reminder at the end of the Great Commission that He is with us always, even to the end of the age! We are within that promise so: JESUS IS WITH US!
+            Download and print these cards. Put a simple coffee card inside and find someone to gift
+            this to! Don't be afraid, simply ask, "Can I share the gospel with you?" Share as much
+            as you want in that moment and gift them this card. We must work the harvest feilds,
+            friend! Jesus said the harvest is plentiful. If we believe Him we simply must labor for
+            this! There's no time to wait, no time to waste. Jesus specifically gave the reminder at
+            the end of the Great Commission that He is with us always, even to the end of the age!
+            We are within that promise so: JESUS IS WITH US!
             We do not go alone to share the Good News of Jesus!
 
-            “Then Jesus came to them and said, 'All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.'”
-
+            “Then Jesus came to them and said, 'All authority in heaven and on earth has been given
+            to me. Therefore go and make disciples of all nations, baptizing them in the name of the
+            Father and of the Son and of the Holy Spirit, and teaching them to obey everything I
+            have commanded you. And surely I am with you always, to the very end of the age.'”
             Matthew 28:18-20 NIV
 
-</description>
+        </description>
 
         <image>images/freedownloads_graphics/goodNewsCards.jpg</image>
-        <pdf>assets/Good News.pdf</pdf> 
+        <pdf>assets/Good News.pdf</pdf>
     </freedownload>
 
 
     <freedownload>
         <id>joybagprintables</id>
         <title>Joy Bag Printables</title>
-        <description> 
+        <description>
             A great way to put serving into action in a busy season of life.
 
             Fill bags with blessings for those in need/homeless in your area.
-            
-            Ideas: socks, hats, non pershiable snakcs, water.  Add this printable to share the gospel, joy, and love.
-            
+
+            Ideas: socks, hats, non pershiable snakcs, water. Add this printable to share the
+            gospel, joy, and love.
+
             Drop bags off at a local food pantry or give to a person in need.
-             
-            
+
+
             May the Lord bless you and keep you,
-            
+
             make his face to shine upon you and be gracious to you.
-            
+
             May he turn his face toward you and give you peace! (Numbers 6:22-26)</description>
 
         <image>images/freedownloads_graphics/joyBagPrintables.png</image>
-        <pdf>assets/Joy Bag Printables.pdf</pdf> 
+        <pdf>assets/Joy Bag Printables.pdf</pdf>
     </freedownload>
 
 
     <freedownload>
         <id>breadprintable</id>
         <title>Bread Bag Printables</title>
-        <description> 
-            A great way to put serving into action in a busy season of life. Simply purchase the ingredients, add to a bag and attach this printable. Drop bags off at a local food pantry or give to a family in need.
+        <description>
+            A great way to put serving into action in a busy season of life. Simply purchase the
+            ingredients, add to a bag and attach this printable. Drop bags off at a local food
+            pantry or give to a family in need.
 
- 
-            May the Lord bless you and keep you, make his face to shine upon you and be gracious to you.
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
             May he turn his face toward you and give you peace! (Numbers 6:22-26)
 
-</description>
+        </description>
 
         <image>images/freedownloads_graphics/breadPrintable.png</image>
-        <pdf>assets/Bread Bag Printables.pdf</pdf> 
+        <pdf>assets/Bread Bag Printables.pdf</pdf>
     </freedownload>
 
     <freedownload>
         <id>happysukkotcard</id>
         <title>Sukkot/Feast of Tabernacles Printables</title>
-        <description> 
+        <description>
             We want you and your children to love God's Word!
 
-            Print as many copies as you want for personal use and to share with friends. 
-            
-            Sukkot/Feast of Tabernacles Printable includes fun graphics to make into signs for your Sukkot celebration plus a coloring page for kids feauting Philippians 4:4.
- 
+            Print as many copies as you want for personal use and to share with friends.
+
+            Sukkot/Feast of Tabernacles Printable includes fun graphics to make into signs for your
+            Sukkot celebration plus a coloring page for kids feauting Philippians 4:4.
+
             May the Lord bless you and keep you,
-            
+
             make his face to shine upon you and be gracious to you.
-            
+
             May he turn his face toward you and give you peace! (Numbers 6:22-26)</description>
 
         <image>images/freedownloads_graphics/happySukkotCard.png</image>
-        <pdf>assets/Sukkot.pdf</pdf> 
+        <pdf>assets/Sukkot.pdf</pdf>
     </freedownload>
 
-    
+    <!-- Notebooking and curriculum printables -->
+    <freedownload>
+        <id>homeschoolnotebooking</id>
+        <title>Homeschool Notebooking</title>
+        <description>
+            Use these notebooking templates in combination with That It May Go Well student guides
+            or as a helpful addition to your homeschool year!
+
+            That It May Go Well is a Christian family-style homeschool curriculum offered for free
+            from Lamp and Light Living. We hope this curriculum with assist you in training your
+            children to love the Lord with all of their heart, soul, and strength and to love their
+            neighbor as themselves.
+
+            To God be the glory!</description>
+
+        <image>images/curriculum_graphics/notebooking.png</image>
+        <pdf>assets/curriculum/Notebooking - That It May Go Well.pdf</pdf>
+    </freedownload>
+
+
+    <freedownload>
+        <id>preschoolcards2</id>
+        <title>Preschool Alphabet Flash Cards</title>
+        <description>
+            Alphabet only, great for pairing with That It May Go Well Preschool.
+            These flashcards are designed to help your child memorize their letters.
+
+
+            May the Lord bless you and keep you,make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)</description>
+
+        <image>images/curriculum_graphics/preschoolAlphabetCards.png</image>
+        <pdf>assets/curriculum/Preschool Alphabet Flashcards - That It May Go Well.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>kindergartensightandalphabetcards</id>
+        <title> Kindergarten Sight Words and Alaphabet Flash Cards</title>
+        <description>
+            Alphabet only, great for pairing with That It May Go Well Preschool.
+            These flashcards are designed to help your child memorize their letters.
+
+
+            May the Lord bless you and keep you,make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)</description>
+
+        <image>images/curriculum_graphics/kindergartenSightWordsAlphabetCards.png</image>
+        <pdf>assets/curriculum/Kindergarten Sight Word and Alphabet Flashcards - That It May Go
+            Well.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>firstgradesightwordcards</id>
+        <title> First Grade Sight Word Flash Cards</title>
+        <description>
+            Great for those using That It May Go Well! These flashcards are designed to help your
+            child memorize their sight words. The sight words pair with 1st grade curriculum of That
+            It May Go Well.
+
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)</description>
+
+        <image>images/curriculum_graphics/firstGradeSightWordCards.png</image>
+        <pdf>assets/curriculum/First Grade Sight Word Flash Cards - That It May Go Well.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>biblestarterpack</id>
+        <title> Armor of God, Fruits of the Spirit, Days of Creation, Lord's Prayer </title>
+        <description>
+
+            This printable pack includes full sheet printables for The Lord's Prayer, The Armor of
+            God, The Fruits of the Spirit, and the Days of Creation. Additionally, the days of
+            creation are available as flash cards. Print them all or select the ones you want after
+            download!
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)
+
+        </description>
+
+        <image>images/images/daysOfCreationSheet.png</image>
+        <pdf>assets/curriculum/Scripture Printable Pack.pdf</pdf>
+    </freedownload>
+
+
+    <!-- Free Kid Downloads -->
+
+    <freedownload>
+        <id>hivetohomeunitstudy</id>
+        <title>From Hive to Home Honey Unit Study</title>
+        <description>
+            Download this free unit study to use in addition to your regular schooling or as a week
+            of learning.
+            Bible verse, penmanship, activities, and more inlcuded.
+
+            Please Note: This study is expanded from the "Did You Know?" Section of That It May Go
+            Well Cycle 2.
+        </description>
+
+        <image>images/freekiddownloads_graphics/honeyUnitStudy.png</image>
+        <pdf>assets/freekiddownloads/From Hive to Home Honey Unit Study.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>bibletriviaflashcards</id>
+        <title>Bible Trivia Cards</title>
+        <description>
+            We want you and your children to love God's Word!
+
+            Printing:
+            These are challenging to get lined up for double sided printing. Consider printing
+            single side on cardstock and laminating if you are able to.
+            Pages 1-9 are trivia questions.
+            Pages 10-19 are are Scriptures.
+            You are welcome to try to print 10-19 as a double side for 1-9.
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)
+        </description>
+
+        <image>images/freekiddownloads_graphics/triviaBibleFlashCards.png</image>
+        <pdf>assets/freekiddownloads/Bible Trivia Cards.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>biblestarterpackforkids</id>
+        <title>Armor of God, Fruits of the Spirit, Days of Creation, Lord's Prayer</title>
+        <description>
+            This printable pack includes full sheet printables for The Lord's Prayer, The Armor of
+            God, The Fruits of the Spirit, and the Days of Creation. Additionally, the days of
+            creation are available as flash cards. Print them all or select the ones you want after
+            download!
+
+            We want you and your children to love God's Word!
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)
+
+        </description>
+
+        <image>images/daysOfCreationSheet.png</image>
+        <pdf>assets/freekiddownloads/Armor of God-Fruits of the Spirit-Days of Creation-Lord's
+            Prayer-Starter Pack.pdf</pdf>
+    </freedownload>
+
+    <freedownload>
+        <id>livingthankfulministudyforkids</id>
+        <title>Living Thankful in an Ungrateful World - Mini Study for Moms and Kids</title>
+        <description>
+            A mini Bible study to do with your children! Great for the week leading up to
+            Thanksgiving.
+        </description>
+
+        <image>images/product_graphics/livingthankful.png</image>
+        <pdf>assets/Living Thankful in an Ungrateful World.pdf</pdf>
+
+    </freedownload>
+
+    <freedownload>
+        <id>passoveractivities</id>
+        <title>Passover Activities</title>
+        <description>
+            We want you love God's Word! Download this free, printable Bible activities along with
+            one week of Bible reading leading up to Passover.
+
+            May the Lord bless you and keep you, make his face to shine upon you and be gracious to
+            you.
+            May he turn his face toward you and give you peace! (Numbers 6:22-26)
+        </description>
+
+        <image>images/freekiddownloads_graphics/passoverActivities.png</image>
+        <pdf>assets/freekiddownloads/Passover Activities.pdf</pdf>
+    </freedownload>
+
+
+    <freedownload>
+        <id>romansroad</id>
+        <title>Romans Road Learning Resources</title>
+        <description>
+            We want to help you teach your children God's Word!
+
+            Download this free 4 week unit study today. We hope you'll be blessed by our free downloads and share our site with your friends. There is no limit to the light that God's Word brings into the world and we want as many people to experience that as possible. 
+        </description>
+
+        <image>images/freekiddownloads_graphics/sunmoonandstarsUnitStudy.jpg</image>
+        <pdf>assets/freekiddownloads/Sun Moon and Stars Unit Study.pdf</pdf>
+    </freedownload>
+
+
 </freedownloads>
