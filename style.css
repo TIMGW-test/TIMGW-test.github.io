@@ -11,10 +11,35 @@ body {
 }
 
 
-
-
+/*##################### Across Multiple Pages #######################*/
 .blackDivider {
   background-color: black;
+}
+
+footer {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-top: auto;
+  padding: 20px;
+  font-size: small;
+  text-align: center;
+  width: auto;
+  color: white;
+  margin-bottom: 0;
+  bottom: 0;
+  position: relative;
+  width: auto;
+}
+
+/* Download icon that hovers over picture on listings - set to display none for now*/
+.downloadSVG {
+  width: 55px;
+  height: 55px;
+  display: none;
+}
+
+.bottomText {
+  display: none;
 }
 
 
@@ -32,6 +57,106 @@ body {
   width: 16%;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+/****************** NAVBAR ******************/
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.9s ease-out;
+  padding-left: 50px;
+}
+
+.lineContainer {
+  border-bottom: 1px white solid;
+  border-top: 1px white solid;
+  margin-top: 8px;
+  width: 96%;
+  height: 36px;
+  padding: 0;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 8px 14px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 19px;
+}
+
+/* Hidden for now */
+#loginNav {
+  float: right;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navIconOpen,
+.navIconClose {
+  display: none;
+}
+
+.fa-solid.fa-chevron-down {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  text-align: center;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  margin-top: 40px;
+  margin-top: 40px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #6f6e6e;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
@@ -170,16 +295,6 @@ body {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
-}
-
 /* Div that holds the buttons and text at the bottom of the homepage */
 .homepageButtonContainer {
   width: 100%;
@@ -238,270 +353,12 @@ body {
 
 
 
-/* Add a black background color to the top navigation */
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  font-size: 16px;
-  text-decoration: none;
-  transition: color 0.9s ease-out;
-  padding-left: 50px;
-
-}
-
-.lineContainer {
-  border-bottom: 1px white solid;
-  border-top: 1px white solid;
-  margin-top: 8px;
-  width: 96%;
-  height: 36px;
-  padding: 0;
-
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  margin: 8px 14px;
-  text-decoration: none;
-  font-size: 16px;
-  margin-bottom: 19px;
-
-}
-
-#loginNav {
-  float: right;
-}
-
-
-
-/* Hide the link that should open and close the topnav on small screens */
-
-.navIconOpen,
-.navIconClose {
-  display: none;
-}
-
-.fa-solid.fa-chevron-down {
-  display: none;
-}
-
-
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  text-align: center;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  margin-top: 40px;
-  margin-top: 40px;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  margin: 0;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  color: #6f6e6e;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/***************************** MOBILE Navbar *******************************/
-@media only screen and (max-width: 768px) {
-
-  .navIconOpen,
-  .navIconClose {
-    display: block;
-    text-decoration: none;
-    color: black;
-    float: right;
-    font-size: 35px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 13;
-  }
-
-  .navIconClose {
-    display: none;
-  }
-
-  .navbar {
-    display: none;
-    background-color: #FFFFFF;
-    color: black;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 12;
-    overflow: hidden;
-    padding-left: 0px;
-
-  }
-
-
-  .navbar a {
-    display: block;
-    float: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    margin: 0;
-    padding-top: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  }
-
-  .dropdown {
-    position: relative;
-  }
-
-  .fa-solid.fa-chevron-down {
-    margin-left: 10px;
-  }
-
-
-  .dropdownContainer {
-    display: flex;
-    text-align: center;
-    align-items: baseline;
-    justify-content: center;
-
-  }
-
-
-  .navbar .lineContainer {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    padding: 0;
-    margin-top: 80px;
-  }
-
-  .lineContainer .dropdown {
-    text-align: center;
-
-  }
-
-
-
-
-  .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  .fa-solid.fa-chevron-down {
-    display: inline-block;
-  }
-
-
-
-
-  .dropdown-content {
-    display: none;
-    position: static;
-    background-color: transparent;
-    box-shadow: none;
-    padding-top: 10px;
-    margin: 0px;
-    margin: 0px;
-  }
-
-  .dropdown-content a {
-    float: none;
-    color: #6f6e6e;
-    padding: 8px 12px;
-    color: #6f6e6e;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-    margin: 0;
-  }
-
-
-
-}
-
-
-
-
-
-
-
-
-/* might not need **/
-.headerText {
-  padding: 20px;
-  text-align: center;
-  font-weight: normal;
-}
-
-/* might not need **/
-.homepageIntro {
-  text-align: center;
-  font-weight: normal;
-}
-
-
-
-
 
 
 
 /**** FONTS ******/
 .homepageIntro,
 .headerText,
-footer,
 .freeDownload,
 .studyListing,
 .contactMemoText,
@@ -511,62 +368,36 @@ footer,
   font-family: 'Roboto', sans-serif;
 }
 
-footer {
-  background-color: black;
-  margin-top: auto;
-  padding: 20px;
-  font-size: small;
-  text-align: center;
-  width: auto;
-  color: white;
-  margin-bottom: 0;
-  bottom: 0;
-  position: relative;
-  width: auto;
-}
 
+/*#############################################################################
+############## Free Downloads, Bible Studies, Free Kid Downloads ##############
+##############################################################################*/
+
+/* Listing container for the free downloads */
 .container {
   position: relative;
   text-align: center;
   width: 285px;
   height: 285px;
+  transition: transform 1s, filter 0.7s;
 }
 
-/* Download icon that hovers over picture on listings */
-.downloadSVG {
-  width: 55px;
-  height: 55px;
-  display: none;
-}
-
-.bottomText {
-  display: none;
-}
-
-
-
+/* Text within the download listing */
 .freeDownloadText {
   text-decoration: none;
   display: inline-block;
   color: #939393;
 }
 
+/* SVG download icon */
 .freeDownloadIcon {
   width: 12px;
   height: 12px;
 }
 
+/* Image on the listing */
 .studyListingImg,
 .freeDownloadListingImg {
-  width: 285px;
-  height: 285px;
-  transition: transform 1s, filter 0.7s;
-}
-
-
-.container {
-  position: relative;
-  text-align: center;
   width: 285px;
   height: 285px;
   transition: transform 1s, filter 0.7s;
@@ -587,14 +418,16 @@ footer {
 
 
 
-/* CONTACT */
+/*########################################
+############## Contact Page ##############
+########################################*/
 
-
+/* Link to FAQ page */
 #linkFAQ {
-
   color: black;
 }
 
+/* Button around link to FAQ page */
 .faqButton {
   text-align: center;
   background-color: white;
@@ -604,7 +437,6 @@ footer {
   margin-top: 10px;
   transition: 0.6s ease;
   cursor: pointer;
-
 }
 
 .faqButton:hover {
@@ -612,9 +444,7 @@ footer {
   color: white;
 }
 
-
-
-
+/* Div that holds contact form */
 .contactDiv {
   text-align: center;
   width: 40%;
@@ -623,9 +453,9 @@ footer {
   padding-top: 4%;
   padding-bottom: 4%;
   margin-bottom: 2%;
-
 }
 
+/* Inputs for the contact form */
 .contactInput,
 .contactInputMessage {
   width: 50%;
@@ -636,16 +466,14 @@ footer {
   font-family: 'Verdana', 'Andale Mono', monospace;
   border: 2px solid black;
   transition: border 0.3s ease-out;
-
 }
 
 .contactInput:hover,
 .contactInputMessage:hover {
   border: 2px solid #333;
-
 }
 
-
+/* Submit button on the contact form */
 .contactSubmitButton {
   border: none;
   background-color: white;
@@ -661,6 +489,12 @@ footer {
   background-color: #333;
   color: white;
 }
+
+
+
+
+
+
 
 
 /********************* Free Bible Studiesand Free downloads Pages **********************/
@@ -756,35 +590,32 @@ footer {
 /**************** Curriculum Page ***************/
 
 .curriculumHeaderContainer {
-  width: 100%;
+  width: 78%;
   display: inline-block;
   text-align: center;
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  margin-left: 50px;
+
+  margin-right: 300px;
 }
 
 .curriculumLogoHeader {
-  float: left;
-  margin-left: 20%;
-  width: 20%;
+  width: 50%;
 }
 
 
 #curriculumVideoContainer {
-  text-align: center;
-  margin-right: 15%;
-
-
-
+  width: 50%;
+  float: right;
 }
 
 .curriculumHeader {
-  width: 40%;
-  float: right;
-  margin-right: 15%;
   font-weight: normal;
+  font-size: 20px;
   font-family: 'Geneva', sans-serif;
+
 
 }
 
@@ -794,14 +625,19 @@ footer {
   border: 1px solid black;
   padding: 12px;
   font-size: 18px;
-  float: right;
-  margin-right: 30%;
-  margin-top: -14%;
 }
 
 .curriculumHeaderButton:hover {
   background-color: black;
   color: white;
+}
+
+.logoAndTextHolder{
+  width: 40%;
+  float: left;
+  margin-left: 110px;
+
+
 }
 
 .curriculumListing {
@@ -853,6 +689,7 @@ footer {
 
 
 
+
 /*************** Cycle Specific *************/
 
 .cycleHeaderContainer {
@@ -868,6 +705,8 @@ footer {
 .cycleLogoHeader {
   width: 15%;
 }
+
+
 
 
 /**************** About Page *****************/
@@ -1221,6 +1060,10 @@ footer {
   color: #333;
 }
 
+#cycle3link{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
   .cycleDiv {
@@ -1285,6 +1128,13 @@ footer {
     width: 90%;
     line-height: 30px;
 
+  }
+
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
   }
 
   .cycleLogoHeader {
@@ -1489,11 +1339,201 @@ footer {
   }
 
   #aboutCurriculumOpeningText {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   #curriculumInfoSheet {
     max-width: 70%;
   }
 
+  .curriculumListingImg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .curriculumListing {
+    width: 130px;
+    height: 130px;
+  
+  }
+  
+  
+  .curriculumListingText {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(27, 24, 24);
+    padding-top: 4px;
+    font-size: 13px;
+  
+  }
+  
+  .containerCurriculum {
+    position: relative;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    transition: transform 1s, filter 0.7s;
+  
+  }
+
+  .curriculumHeaderContainer{
+
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+ }
+
+
+.curriculumLogoHeader {
+  width: 70%;
+
+}
+
+.logoAndTextHolder {
+padding-bottom: 10px;
+}
+
+
+#curriculumVideoContainer {
+  float: none;
+  width: auto;
+}
+
+
+  .navIconOpen,
+  .navIconClose {
+    display: block;
+    text-decoration: none;
+    color: black;
+    float: right;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 13;
+  }
+
+  .navIconClose {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+    background-color: #FFFFFF;
+    color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    overflow: hidden;
+    padding-left: 0px;
+
+  }
+
+
+  .navbar a {
+    display: block;
+    float: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .fa-solid.fa-chevron-down {
+    margin-left: 10px;
+  }
+
+
+  .dropdownContainer {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+
+  }
+
+
+  .navbar .lineContainer {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  .lineContainer .dropdown {
+    text-align: center;
+
+  }
+
+
+
+
+  .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .fa-solid.fa-chevron-down {
+    display: inline-block;
+  }
+
+
+
+
+  .dropdown-content {
+    display: none;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 10px;
+    margin: 0px;
+    margin: 0px;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #6f6e6e;
+    padding: 8px 12px;
+    color: #6f6e6e;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+  }
+
+
+
+
+
+
+}
+
+
+  /* CHECK ME ##################### */
+/* might not need **/
+.headerText {
+  padding: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* might not need **/
+.homepageIntro {
+  text-align: center;
+  font-weight: normal;
 }
