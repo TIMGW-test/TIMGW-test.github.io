@@ -633,7 +633,7 @@ footer {
 }
 
 .logoAndTextHolder{
-  width: 43%;
+  width: 40%;
   float: left;
   margin-left: 110px;
 
@@ -1391,6 +1391,7 @@ footer {
 
 .logoAndTextHolder {
 padding-bottom: 10px;
+width: 43%;
 }
 
 
